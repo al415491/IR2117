@@ -1,13 +1,16 @@
 #include <iostream>
 
+int sum(int num){
+	int suma = ((1+num)*num)/2 ;
+	return suma;
+}
+
+
 int main() {
-int num, sum=0;
+int num, suma;
 std::cout << "Enter a number: ";
 std::cin >> num;
-
-// arithmetic sum
-sum = ((1+num)*num)/2 ;
-
-std::cout << "The sum from 1 to " << num << " is " << sum << std::endl;
+suma = sum(num);
+std::cout << "The sum from 1 to " << num << " is " << suma << std::endl;
 return 0;
 }
