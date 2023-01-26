@@ -12,9 +12,9 @@ int num, suma;
 std::cout << "Enter a number: ";
 std::cin >> num;
 
-if (num<1) {
-	std::cout << "ValueError --> Number must be equal or greater than 1\n";
-	return 0;
+while (num<1) {
+	std::cout << "Enter a number equal or greater than 1: ";
+	std::cin >> num;
 	}
 
 suma = sum(num);
