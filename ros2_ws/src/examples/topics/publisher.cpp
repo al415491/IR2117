@@ -4,7 +4,7 @@
 
 using namespace std::chrono_literals;
 
-int main(int argc, char * argv[])
+int main(int argc, char * argv[]) 	
 {
   rclcpp::init(argc, argv);
   auto node = rclcpp::Node::make_shared("publisher");
@@ -22,4 +22,17 @@ int main(int argc, char * argv[])
   rclcpp::shutdown();
   return 0;
 }
+
+
+/*
+rclcpp:: library de ros
+l10 inicializa nodo --> objeto de la clase Node dentro de la biblioteca rclcpp
+l11 creamos un objeto publisher dentro de node que publicara en un topic en formato string
+l12 variable msg 
+l16 True hasta que hagamos ctrl+c
+l18 publica
+l19 Se ocupa de que no acabe el programa hasta hacer ctrl+c o se ocupa de cosas pendientes
+l20 pausa de 500 ms
+
+*/
 
