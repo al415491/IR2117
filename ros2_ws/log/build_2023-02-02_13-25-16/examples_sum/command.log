@@ -1,0 +1,4 @@
+Invoking command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum -- -j16 -l16
+Invoked command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum -- -j16 -l16
+Invoking command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum
+Invoked command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum

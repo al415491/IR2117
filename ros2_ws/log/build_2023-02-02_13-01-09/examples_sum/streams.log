@@ -1,0 +1,65 @@
+[0.015s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/examples/sum -DCMAKE_INSTALL_PREFIX=/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum
+[0.052s] -- The C compiler identification is GNU 9.4.0
+[0.087s] -- The CXX compiler identification is GNU 9.4.0
+[0.090s] -- Check for working C compiler: /usr/bin/cc
+[0.134s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.134s] -- Detecting C compiler ABI info
+[0.178s] -- Detecting C compiler ABI info - done
+[0.188s] -- Detecting C compile features
+[0.188s] -- Detecting C compile features - done
+[0.190s] -- Check for working CXX compiler: /usr/bin/c++
+[0.247s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.248s] -- Detecting CXX compiler ABI info
+[0.302s] -- Detecting CXX compiler ABI info - done
+[0.311s] -- Detecting CXX compile features
+[0.312s] -- Detecting CXX compile features - done
+[0.313s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.331s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.331s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.466s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.494s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.498s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.539s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.557s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.606s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.645s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.647s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.647s] -- Looking for pthread.h
+[0.690s] -- Looking for pthread.h - found
+[0.691s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.738s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.739s] -- Looking for pthread_create in pthreads
+[0.783s] -- Looking for pthread_create in pthreads - not found
+[0.783s] -- Looking for pthread_create in pthread
+[0.834s] -- Looking for pthread_create in pthread - found
+[0.835s] -- Found Threads: TRUE  
+[0.998s] -- Configuring done
+[1.003s] -- Generating done
+[1.004s] -- Build files have been written to: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum
+[1.007s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/examples/sum -DCMAKE_INSTALL_PREFIX=/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum
+[1.009s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum -- -j16 -l16
+[1.033s] [35m[1mScanning dependencies of target sum[0m
+[1.054s] [ 50%] [32mBuilding CXX object CMakeFiles/sum.dir/sum.cpp.o[0m
+[4.087s] [100%] [32m[1mLinking CXX executable sum[0m
+[4.216s] [100%] Built target sum
+[4.222s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum -- -j16 -l16
+[4.238s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum
+[4.243s] -- Install configuration: ""
+[4.243s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/lib/examples_sum/sum
+[4.244s] -- Set runtime path of "/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/lib/examples_sum/sum" to ""
+[4.244s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/ament_index/resource_index/package_run_dependencies/examples_sum
+[4.244s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/ament_index/resource_index/parent_prefix_path/examples_sum
+[4.245s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/environment/ament_prefix_path.sh
+[4.245s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/environment/ament_prefix_path.dsv
+[4.245s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/environment/path.sh
+[4.245s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/environment/path.dsv
+[4.245s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/local_setup.bash
+[4.245s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/local_setup.sh
+[4.245s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/local_setup.zsh
+[4.245s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/local_setup.dsv
+[4.245s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/package.dsv
+[4.245s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/ament_index/resource_index/packages/examples_sum
+[4.245s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/cmake/examples_sumConfig.cmake
+[4.245s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/cmake/examples_sumConfig-version.cmake
+[4.245s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/package.xml
+[4.248s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum
