@@ -8,17 +8,16 @@ int main() {
 	std::cin >> b;
 
 	while ( a<1 ){
-	std::cout << "Enter  a: ";
-	std::cin >> a;
+		std::cout << "Enter  a: ";
+		std::cin >> a;
 	}
-	while ( b<1 ){
+	while ( b<a ){
 		std::cout << "Enter  b: ";
 		std::cin >> b;
-		}
-	for (int i=a; i<=b; i++) {
-		suma+=i;
+	}
+	for (int I=a; I<=b; I++) {
+		suma+=I;
 		}
 
 	std::cout << "The sum is " << suma << std::endl;
-	return 0;
-}
+	return 0;}
