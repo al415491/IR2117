@@ -7,6 +7,11 @@ int main() {
 	std::cout << "Enter  b: ";
 	std::cin >> b;
 
+	while ( a<1 ){
+	std::cout << "Enter  a: ";
+	std::cin >> a;
+	}
+
 	for (int i=a; i<=b; i++) {
 		suma+=i;
 		}
