@@ -11,7 +11,10 @@ int main() {
 	std::cout << "Enter  a: ";
 	std::cin >> a;
 	}
-
+	while ( b<1 ){
+		std::cout << "Enter  b: ";
+		std::cin >> b;
+		}
 	for (int i=a; i<=b; i++) {
 		suma+=i;
 		}
