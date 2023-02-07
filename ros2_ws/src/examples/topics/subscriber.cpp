@@ -17,3 +17,9 @@ int main(int argc, char * argv[])
   return 0;
 }
 
+
+/*
+el subscriber espera y no hace nada si no llegan mensajes
+l5 muestra el mensaje
+l15 quedarse inactivo espreando msgs
+*/
