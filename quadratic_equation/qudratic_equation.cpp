@@ -11,10 +11,14 @@ int main() {
 	std::cin >> c;
 	
 	double discriminant = b*b - 4*a*c;
-	if (discriminant > 0) { 
+	if (discriminant < 0) { 
+		std::cout << "No solutions" << std::endl;
+		return 0;
+	} else {
 		solution1= (-b  + std::sqrt(discriminant))/(2*a);
 		solution2= (-b  - std::sqrt(discriminant))/(2*a);
+		std::cout << "Solutions are " << solution1 << ", " << solution2 << std::endl;
+		return 0;}
 	}
 
-	std::cout << "Solutions are " << solution1 << ", " << solution2 << std::endl;
-	return 0;}
+	
