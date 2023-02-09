@@ -1,0 +1,19 @@
+[0.017s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum -- -j16 -l16
+[0.052s] [ 50%] [32mBuilding CXX object CMakeFiles/sum.dir/sum.cpp.o[0m
+[0.877s] [01m[K/home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/examples/sum/sum.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.877s] [01m[K/home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/examples/sum/sum.cpp:15:10:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Krclcpp[m[K’
+[0.877s]    15 |   sum = 0
+[0.877s]       |          [01;31m[K^[m[K
+[0.877s]       |          [32m[K;[m[K
+[0.877s]    16 |   [32m[Krclcpp[m[K::init(argc, argv);
+[0.877s]       |   [32m[K~~~~~~[m[K  
+[0.884s] [01m[K/home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/examples/sum/sum.cpp:13:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[0.884s]    13 | int main([01;35m[Kint argc[m[K, char * argv[])
+[0.884s]       |          [01;35m[K~~~~^~~~[m[K
+[0.884s] [01m[K/home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/examples/sum/sum.cpp:13:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[0.884s]    13 | int main(int argc, [01;35m[Kchar * argv[][m[K)
+[0.884s]       |                    [01;35m[K~~~~~~~^~~~~~[m[K
+[1.798s] make[2]: *** [CMakeFiles/sum.dir/build.make:63: CMakeFiles/sum.dir/sum.cpp.o] Error 1
+[1.798s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/sum.dir/all] Error 2
+[1.798s] make: *** [Makefile:141: all] Error 2
+[1.801s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_sum -- -j16 -l16
