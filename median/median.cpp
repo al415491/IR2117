@@ -19,11 +19,11 @@ int main() {
 	}
 	
 	std::sort(elements.begin(), elements.end()); 
-	
+	int middle = elements.size()/2;
 	if ( n % 2  == 0) { 	// par
 		std::cout << "Even " << std::endl;
 	}else{ 			// impar
-		std::cout << "Odd " << std::endl;
+		m = elements[middle];
 	}
 	
 	std::cout << "Median: " << m << std::endl;
