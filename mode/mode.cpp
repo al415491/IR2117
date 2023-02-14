@@ -18,12 +18,13 @@ int main() {
 		std::cin >> input;
 	}
 	
-	int count=0;
-	for (int i=0; i<n; i++)
-		if (elements[i]==elements[0])
-			count++;
-
+	int count[n];
+	for (int j=0; j<n; j++){
+		for (int i=0; i<n; i++)
+			if (elements[i]==elements[0])
+				count++;
+	}
 	
-	std::cout << "Median: " << m << std::endl;
+	std::cout << "Mode: " << m << std::endl;
 	return 0;
 }
