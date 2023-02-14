@@ -21,7 +21,7 @@ int main() {
 	std::sort(elements.begin(), elements.end()); 
 	int middle = elements.size()/2;
 	if ( n % 2  == 0) { 	// par
-		std::cout << "Even " << std::endl;
+		m = double(elements[middle]+elements[middle+1])/2;
 	}else{ 			// impar
 		m = elements[middle];
 	}
