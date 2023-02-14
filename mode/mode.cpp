@@ -18,12 +18,15 @@ int main() {
 		std::cin >> input;
 	}
 	
-	int count[n];
+	int count[n], max=0;
 	for (int j=0; j<n; j++){
 		for (int i=0; i<n; i++)
 			if (elements[i]==elements[0])
 				count++;
+		if (count[j] > count[max])
+			max = j;
 	}
+	m = elements[max];
 	
 	std::cout << "Mode: " << m << std::endl;
 	return 0;
