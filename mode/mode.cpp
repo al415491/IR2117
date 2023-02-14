@@ -18,13 +18,11 @@ int main() {
 		std::cin >> input;
 	}
 	
-	std::sort(elements.begin(), elements.end()); 
-	int middle = elements.size()/2;
-	if ( n % 2  == 0) { 	// par
-		m = double(elements[middle]+elements[middle+1])/2;
-	}else{ 			// impar
-		m = elements[middle];
-	}
+	int count=0;
+	for (int i=0; i<n; i++)
+		if (elements[i]==elements[0])
+			count++;
+
 	
 	std::cout << "Median: " << m << std::endl;
 	return 0;
