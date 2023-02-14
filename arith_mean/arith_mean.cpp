@@ -6,7 +6,7 @@ int main() {
 	std::cout << "Give me a number (0 to finish): " << std::endl;
 	std::cin >> input;
 	
-	while( !std::cin.eof() ) {  // Ctrl + D para indicar end of file
+	while( not std::cin.eof() ) {  // Ctrl + D para indicar end of file
 		s+= input;
 		n++;
 		std::cout << "Give me a number (0 to finish): " << std::endl;
