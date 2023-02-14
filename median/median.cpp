@@ -1,5 +1,9 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
+
+
+
 int main() {
 	double m = 0, s = 0;
 	int n = 0, input;
@@ -14,7 +18,13 @@ int main() {
 		std::cin >> input;
 	}
 	
-	sort(elements.begin(), elements.end()); 
+	std::sort(elements.begin(), elements.end()); 
+	
+	if ( n % 2  == 0) { 	// par
+		std::cout << "Even " << std::endl;
+	}else{ 			// impar
+		std::cout << "Odd " << std::endl;
+	}
 	
 	std::cout << "Median: " << m << std::endl;
 	return 0;
