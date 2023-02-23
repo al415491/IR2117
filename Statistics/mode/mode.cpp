@@ -18,15 +18,16 @@ int main() {
 		std::cin >> input;
 	}
 	
-	std::sort(elements.begin(), elements.end()); 
-	int middle = elements.size()/2;
-	if ( n % 2  == 0) { 	// par
-		std::cout << "Even " << std::endl;
-		m = double(elements[middle]+elements[middle+1])/2;
-	}else{ 			// impar
-		m = elements[middle];
+	int count[n], max=0;
+	for (int j=0; j<n; j++){
+		for (int i=0; i<n; i++)
+			if (elements[i]==elements[0])
+				count++;
+		if (count[j] > count[max])
+			max = j;
 	}
+	m = elements[max];
 	
-	std::cout << "Median: " << m << std::endl;
+	std::cout << "Mode: " << m << std::endl;
 	return 0;
 }

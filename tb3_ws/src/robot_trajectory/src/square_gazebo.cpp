@@ -13,7 +13,7 @@ int main(int argc, char * argv[])
   rclcpp::WallRate loop_rate(10ms);
 
   for(int j=0; j<4; j++)
-  { 
+  {
   	int i=0, n=1000;
   	while (rclcpp::ok() && (i<n)) { // move forward 1m
   		i++;	
@@ -26,14 +26,13 @@ int main(int argc, char * argv[])
   	// send zero velocity to topic
   	message.linear.x = 0;
   	publisher->publish(message);
-  	
-  	
-    i=0; 
-  	n=350; // a ojo
+  
+  	i=0; 
+  	n=1571; // a ojo
   	while (rclcpp::ok() && (i<n)) { // turn 90
   		i++;	
   		message.linear.x = 0;
-  		message.angular.z = 0.5;
+  		message.angular.z = 0.1;
     	publisher->publish(message);
     	rclcpp::spin_some(node);
     	loop_rate.sleep();
@@ -59,9 +58,6 @@ int main(int argc, char * argv[])
 90 grados = pi/2 radianes
 Tiempo necesario para girar pi/2 radianes a 0.1 rad/s:
 t = (pi/2) / 0.1 = 5*pi segundos
-
 En un looprate de 10 ms, el número de iteraciones necesarias sería:
-
 iteraciones = (5*pi segundos) / (0.01 segundos/iteración) = 1570.8 iteraciones
-
 */
