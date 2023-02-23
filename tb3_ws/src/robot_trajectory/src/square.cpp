@@ -1,6 +1,7 @@
 #include <chrono>
 #include "rclcpp/rclcpp.hpp"
 #include "geometry_msgs/msg/twist.hpp"
+#include <cmath> //M_PI
 
 using namespace std::chrono_literals;
 
@@ -9,17 +10,20 @@ int main(int argc, char * argv[])
   rclcpp::init(argc, argv);
   auto node = rclcpp::Node::make_shared("square");
   auto publisher = node->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
-  node->declare_parameter("speed", 0.1);
+  node->declare_parameter("linear_speed", 0.1);
+  node->declare_parameter("angular_speed", M_PI / 20);
   geometry_msgs::msg::Twist message;
   rclcpp::WallRate loop_rate(10ms);
 
-  double speed = node->get_parameter("speed").get_parameter_value().get<double>();
+  double linear_speed = node->get_parameter("linear_speed").get_parameter_value().get<double>();
+  double angular_speed = node->get_parameter("angular_speed").get_parameter_value().get<double>();
   for(int j=0; j<4; j++)
   { 
-  	int i=0, n=1000;
-  	while (rclcpp::ok() && (i<n)) { // move forward 1m
+  	int linear_iterations = 1 / (0.01 * linear_speed);
+  	int i=0;
+  	while (rclcpp::ok() && (i<linear_iterations)) { // move forward 1m
   		i++;	
-  		message.linear.x = speed;
+  		message.linear.x = linear_speed;
   		message.angular.z = 0;
     	publisher->publish(message);
     	rclcpp::spin_some(node);
@@ -31,11 +35,12 @@ int main(int argc, char * argv[])
   	
   	
     i=0; 
-  	n=1570.8; // a ojo
-  	while (rclcpp::ok() && (i<n)) { // turn 90
+    double angular_iterations = (1.57 /angular_speed)/0.01;
+    // (tiempo en girar 90ª/velocidad) / looprate
+  	while (rclcpp::ok() && (i<angular_iterations)) { // turn 90
   		i++;	
   		message.linear.x = 0;
-  		message.angular.z = 0.5;
+  		message.angular.z = angular_speed;
     	publisher->publish(message);
     	rclcpp::spin_some(node);
     	loop_rate.sleep();
