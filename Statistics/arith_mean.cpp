@@ -13,7 +13,7 @@ int main() {
 		std::cout << "Give me a number (0 to finish): " << std::endl;
 		std::cin >> input;
 	}
-	for ( int = 0; i< n; i++ ) {
+	for ( int i=0; i< n; i++ ) {
 		s+= elements[i];	
 	}
 	m = s/n; 
