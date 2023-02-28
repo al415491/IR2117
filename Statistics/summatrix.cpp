@@ -24,6 +24,8 @@ int main() {
         s(i) = m.row(i).sum();
     }
     std::cout << "The sum of row 0 is " << s << std::endl;
+    double maxRowSum = s.maxCoeff();
+    std::cout << "The maximum sum of rows is " << maxRowSum << std::endl;
 
     return 0;
 }
