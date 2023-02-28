@@ -35,6 +35,8 @@ int main() {
     std::cout << "The maximum sum of rows is " << maxRowSum << std::endl;
     double maxColSum = sc.maxCoeff();
     std::cout << "The maximum sum of cols is " << maxColSum << std::endl;
+    double maxSum = maxRowSum > maxColSum ? maxRowSum : maxColSum;
+    std::cout << "The maximum sum of cols & rows is " << maxSum << std::endl;
 
     return 0;
 }
