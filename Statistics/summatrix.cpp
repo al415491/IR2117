@@ -33,6 +33,8 @@ int main() {
     std::cout << "The sum of columns is " << sc << std::endl;
     double maxRowSum = s.maxCoeff();
     std::cout << "The maximum sum of rows is " << maxRowSum << std::endl;
+    double maxColSum = sc.maxCoeff();
+    std::cout << "The maximum sum of cols is " << maxColSum << std::endl;
 
     return 0;
 }
