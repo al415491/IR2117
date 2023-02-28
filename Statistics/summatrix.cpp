@@ -2,6 +2,7 @@
 #include <Eigen/Dense>
 
 using Eigen::MatrixXd;
+using Eigen::VectorXd;
 
 int main() {
     int rows, cols; 
@@ -18,7 +19,10 @@ int main() {
     std::cout << "Matrix is " << std::endl;
     std::cout << m << std::endl;
 
-    double s = m.row(0).sum();
+    VectorXd s(rows);
+    for (int i=0; i<rows; i++){
+        s(i) = m.row(i).sum();
+    }
     std::cout << "The sum of row 0 is " << s << std::endl;
 
     return 0;
