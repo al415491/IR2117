@@ -9,9 +9,19 @@ double xp;
 double yp; 
 double xo; 
 double yo;
-double angle; 
+double angle;
+double initial_xp;
+double initial_yp;
+double initial_angle;
+ 
 
-void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg){
+void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
+{
+	if (initial_xp == 0 && initial_yp == 0 && initial_angle == 0) {
+        initial_xp = msg->pose.pose.position.x;
+        initial_yp = msg->pose.pose.position.y;
+        initial_angle = std::atan2(msg->pose.pose.orientation.y, msg->pose.pose.orientation.x);
+    }
 	xp = msg->pose.pose.position.x;
 	yp = msg->pose.pose.position.y;
 	xo = msg->pose.pose.orientation.x;
