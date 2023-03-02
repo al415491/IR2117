@@ -1,0 +1,50 @@
+[0.012s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j16 -l16
+[0.039s] [35m[1mScanning dependencies of target square_odom[0m
+[0.052s] [ 50%] Built target square
+[0.060s] [ 75%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[0.935s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:8:42:[m[K [01;31m[Kerror: [m[K‘[01m[KOdometry[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+[0.935s]     8 | void topic_callback(const std_msgs::msg::[01;31m[KOdometry[m[K::SharedPtr msg)
+[0.935s]       |                                          [01;31m[K^~~~~~~~[m[K
+[0.935s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:8:62:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+[0.935s]     8 | void topic_callback(const std_msgs::msg::Odometry::SharedPtr [01;31m[Kmsg[m[K)
+[0.935s]       |                                                              [01;31m[K^~~[m[K
+[0.935s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:8:61:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+[0.935s]     8 | void topic_callback[34m[K([m[Kconst std_msgs::msg::Odometry::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K)
+[0.935s]       |                    [34m[K~[m[K                                        [01;31m[K^[m[K[32m[K~~~[m[K
+[0.935s]       |                                                             [32m[K)[m[K
+[0.936s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:8:62:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+[0.936s]     8 | void topic_callback(const std_msgs::msg::Odometry::SharedPtr [01;31m[Kmsg[m[K)
+[0.936s]       |                                                              [01;31m[K^~~[m[K
+[0.936s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.936s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:18:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class rclcpp::Node[m[K’ {aka ‘[01m[Kclass rclcpp::Node[m[K’} has no member named ‘[01m[Kcreate_subscriber[m[K’; did you mean ‘[01m[Kcreate_subscription[m[K’?
+[0.936s]    18 |   auto subscription = node->[01;31m[Kcreate_subscriber[m[K<nav_msgs::msg::Odometry>("odom", 10, topic_callback);
+[0.936s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[0.936s]       |                             [32m[Kcreate_subscription[m[K
+[0.936s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:18:70:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[0.936s]    18 | ubscription = node->create_subscriber<nav_msgs::msg::Odometry[01;31m[K>[m[K("odom", 10, topic_callback);
+[0.936s]       |                                                              [01;31m[K^[m[K
+[0.936s] 
+[0.936s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:18:72:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+[0.936s]    18 | scription = node->create_subscriber<nav_msgs::msg::Odometry>([01;35m[K"odom"[m[K, 10, topic_callback);
+[0.936s]       |                                                              [01;35m[K^~~~~~[m[K
+[0.936s] 
+[0.937s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:18:84:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopic_callback[m[K’ was not declared in this scope
+[0.937s]    18 | = node->create_subscriber<nav_msgs::msg::Odometry>("odom", 10, [01;31m[Ktopic_callback[m[K);
+[0.937s]       |                                                                [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.937s] 
+[0.940s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:30:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[0.940s]    30 |     [01;31m[Kmessage[m[K.linear.x = linear_speed;
+[0.940s]       |     [01;31m[K^~~~~~~[m[K
+[0.941s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:32:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher[m[K’ was not declared in this scope
+[0.941s]    32 |      [01;31m[Kpublisher[m[K->publish(message);
+[0.941s]       |      [01;31m[K^~~~~~~~~[m[K
+[0.942s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:37:4:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[0.942s]    37 |    [01;31m[Kmessage[m[K.linear.x = 0;
+[0.943s]       |    [01;31m[K^~~~~~~[m[K
+[0.943s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:38:4:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher[m[K’ was not declared in this scope
+[0.943s]    38 |    [01;31m[Kpublisher[m[K->publish(message);
+[0.943s]       |    [01;31m[K^~~~~~~~~[m[K
+[1.211s] make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Error 1
+[1.212s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/square_odom.dir/all] Error 2
+[1.212s] make: *** [Makefile:141: all] Error 2
+[1.214s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j16 -l16

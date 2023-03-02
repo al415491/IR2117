@@ -1,0 +1,20 @@
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:16:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class rclcpp::Node[m[K’ {aka ‘[01m[Kclass rclcpp::Node[m[K’} has no member named ‘[01m[Kcreate_subscriber[m[K’; did you mean ‘[01m[Kcreate_subscription[m[K’?
+   16 |   auto subscription = node->[01;31m[Kcreate_subscriber[m[K<nav_msgs::msg::Odometry>("odom", 10, topic_callback);
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                             [32m[Kcreate_subscription[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:16:70:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   16 | ubscription = node->create_subscriber<nav_msgs::msg::Odometry[01;31m[K>[m[K("odom", 10, topic_callback);
+      |                                                              [01;31m[K^[m[K
+
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:16:72:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+   16 | scription = node->create_subscriber<nav_msgs::msg::Odometry>([01;35m[K"odom"[m[K, 10, topic_callback);
+      |                                                              [01;35m[K^~~~~~[m[K
+
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:16:84:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+   16 | = node->create_subscriber<nav_msgs::msg::Odometry>("odom", 10, [01;35m[Ktopic_callback[m[K);
+      |                                                                [01;35m[K^~~~~~~~~~~~~~[m[K
+
+make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/square_odom.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
