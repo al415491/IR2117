@@ -13,6 +13,7 @@ double angle;
 double initial_xp;
 double initial_yp;
 double initial_angle;
+double distance;
  
 
 void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
@@ -27,9 +28,14 @@ void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
 	xo = msg->pose.pose.orientation.x;
 	yo = msg->pose.pose.orientation.y;
 	angle = std::atan2(yo, xo);
+	distance = std::sqrt(std::pow(xp - initial_xp, 2) + std::pow(yp - initial_yp, 2));
+	std::cout << "Initial x: " << initial_xp << std::endl;
+	std::cout << "Initial y: " << initial_yp << std::endl;
 	std::cout << "Pos x: " << xp << std::endl;
 	std::cout << "Pos y: " << yp << std::endl;
 	std::cout << "Angle in radians: " << angle << std::endl;
+	std::cout << "distance: " << distance << std::endl;
+	std::cout << "----------" << std::endl;
 }
 
 int main(int argc, char * argv[]) 	
