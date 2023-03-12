@@ -26,12 +26,15 @@ find_package(nav_msgs REQUIRED)
 
 add_executable(square src/square.cpp)
 add_executable(square_odom src/square_odom.cpp)
+add_executable(square_iterations src/square_iterations.cpp)
 ament_target_dependencies(square rclcpp geometry_msgs)
+ament_target_dependencies(square_iterations rclcpp geometry_msgs)
 ament_target_dependencies(square_odom rclcpp nav_msgs)
 
 install (TARGETS
   square
   square_odom
+  square_iterations
   DESTINATION lib/${PROJECT_NAME}
 )
 
