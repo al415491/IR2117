@@ -1,0 +1,62 @@
+[0.000000] (-) TimerEvent: {}
+[0.000079] (robot_trajectory) JobQueued: {'identifier': 'robot_trajectory', 'dependencies': OrderedDict()}
+[0.000101] (robot_trajectory) JobStarted: {'identifier': 'robot_trajectory'}
+[0.008037] (robot_trajectory) JobProgress: {'identifier': 'robot_trajectory', 'progress': 'cmake'}
+[0.009003] (robot_trajectory) JobProgress: {'identifier': 'robot_trajectory', 'progress': 'build'}
+[0.009037] (robot_trajectory) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory', '--', '-j16', '-l16'], 'cwd': '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pau24113'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/pau24113'), ('OLDPWD', '/home/pau24113'), ('DESKTOP_SESSION', 'ubuntu-wayland'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1575'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pau24113'), ('JOURNAL_STREAM', '8:53287'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pau24113'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/pau24113/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pau24113:@/tmp/.ICE-unix/1721,unix/pau24113:/tmp/.ICE-unix/1721'), ('INVOCATION_ID', '0553da97b64b4a3f9fb64c6e24e36406'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/468d66c0_0288_421e_8042_1da17d741583'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-wayland'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.36U911'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.116'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/robot_trajectory:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-wayland'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-wayland:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-wayland:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/robot_trajectory:/opt/ros/foxy')]), 'shell': False}
+[0.039526] (robot_trajectory) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target wandering\x1b[0m\n'}
+[0.053106] (robot_trajectory) StdoutLine: {'line': b'[ 50%] Built target square_iterations\n'}
+[0.053254] (robot_trajectory) StdoutLine: {'line': b'[ 50%] Built target square\n'}
+[0.053326] (robot_trajectory) StdoutLine: {'line': b'[ 75%] Built target square_odom\n'}
+[0.056494] (robot_trajectory) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o\x1b[0m\n'}
+[0.099221] (-) TimerEvent: {}
+[0.199519] (-) TimerEvent: {}
+[0.299761] (-) TimerEvent: {}
+[0.399957] (-) TimerEvent: {}
+[0.500190] (-) TimerEvent: {}
+[0.600489] (-) TimerEvent: {}
+[0.700725] (-) TimerEvent: {}
+[0.800927] (-) TimerEvent: {}
+[0.901190] (-) TimerEvent: {}
+[0.946889] (robot_trajectory) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.947051] (robot_trajectory) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:28:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdistance\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::distance\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[0.947108] (robot_trajectory) StderrLine: {'line': b'   28 |    while (rclcpp::ok() && (\x1b[01;31m\x1b[Kdistance\x1b[m\x1b[K<square_length)) // move forward\n'}
+[0.947163] (robot_trajectory) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[0.947213] (robot_trajectory) StderrLine: {'line': b'      |                            \x1b[32m\x1b[Kstd::distance\x1b[m\x1b[K\n'}
+[0.947259] (robot_trajectory) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:66\x1b[m\x1b[K,\n'}
+[0.947306] (robot_trajectory) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:62\x1b[m\x1b[K,\n'}
+[0.947351] (robot_trajectory) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144\x1b[m\x1b[K,\n'}
+[0.947396] (robot_trajectory) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:2\x1b[m\x1b[K:\n'}
+[0.947441] (robot_trajectory) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_iterator_base_funcs.h:138:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::distance\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[0.947486] (robot_trajectory) StderrLine: {'line': b'  138 |     \x1b[01;36m\x1b[Kdistance\x1b[m\x1b[K(_InputIterator __first, _InputIterator __last)\n'}
+[0.947531] (robot_trajectory) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[0.948262] (robot_trajectory) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:28:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksquare_length\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.948336] (robot_trajectory) StderrLine: {'line': b'   28 |    while (rclcpp::ok() && (distance<\x1b[01;31m\x1b[Ksquare_length\x1b[m\x1b[K)) // move forward\n'}
+[0.948388] (robot_trajectory) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.955312] (robot_trajectory) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:\x1b[m\x1b[K At global scope:\n'}
+[0.955390] (robot_trajectory) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:102:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected constructor, destructor, or type conversion before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[0.955444] (robot_trajectory) StderrLine: {'line': b'  102 |   rclcpp::shutdown()\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[0.955493] (robot_trajectory) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.955540] (robot_trajectory) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:103:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kreturn\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.955586] (robot_trajectory) StderrLine: {'line': b'  103 |   \x1b[01;31m\x1b[Kreturn\x1b[m\x1b[K 0;\n'}
+[0.955631] (robot_trajectory) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.955675] (robot_trajectory) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:104:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[0.955720] (robot_trajectory) StderrLine: {'line': b'  104 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[0.955767] (robot_trajectory) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.001301] (-) TimerEvent: {}
+[1.101533] (-) TimerEvent: {}
+[1.201771] (-) TimerEvent: {}
+[1.302046] (-) TimerEvent: {}
+[1.402300] (-) TimerEvent: {}
+[1.502497] (-) TimerEvent: {}
+[1.602725] (-) TimerEvent: {}
+[1.702958] (-) TimerEvent: {}
+[1.803157] (-) TimerEvent: {}
+[1.903387] (-) TimerEvent: {}
+[2.003673] (-) TimerEvent: {}
+[2.032877] (robot_trajectory) StderrLine: {'line': b'make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1\n'}
+[2.033150] (robot_trajectory) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:84: CMakeFiles/wandering.dir/all] Error 2\n'}
+[2.033330] (robot_trajectory) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[2.034778] (robot_trajectory) CommandEnded: {'returncode': 2}
+[2.065801] (robot_trajectory) JobEnded: {'identifier': 'robot_trajectory', 'rc': 2}
+[2.076202] (-) EventReactorShutdown: {}
