@@ -1,0 +1,27 @@
+[35m[1mScanning dependencies of target wandering[0m
+[ 75%] Built target square_odom
+[ 75%] Built target square_iterations
+[ 75%] Built target square
+[ 87%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kvoid topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:16:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::views[m[K’ has not been declared
+   16 |     for (const auto& elem : vector | std::[01;31m[Kviews[m[K::take(10))
+      |                                           [01;31m[K^~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:23:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::views[m[K’ has not been declared
+   23 |     for (const auto& elem : vector | std::[01;31m[Kviews[m[K::reverse | std::views::take(10))
+      |                                           [01;31m[K^~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:23:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::views[m[K’ has not been declared
+   23 |     for (const auto& elem : vector | std::views::reverse | std::[01;31m[Kviews[m[K::take(10))
+      |                                                                 [01;31m[K^~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:31:1:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+   31 | [01;31m[K{[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:57:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   57 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:12:2:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   12 |  [01;36m[K{[m[K
+      |  [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:84: CMakeFiles/wandering.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,14 @@
+[0.012s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j16 -l16
+[0.041s] [35m[1mScanning dependencies of target wandering[0m
+[0.055s] [ 25%] Built target square_iterations
+[0.055s] [ 50%] Built target square_odom
+[0.055s] [ 75%] Built target square
+[0.058s] [ 87%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[0.127s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kranges: No such file or directory
+[0.128s]     6 | #include [01;31m[K<ranges>[m[K
+[0.128s]       |          [01;31m[K^~~~~~~~[m[K
+[0.128s] compilation terminated.
+[0.129s] make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+[0.129s] make[1]: *** [CMakeFiles/Makefile2:84: CMakeFiles/wandering.dir/all] Error 2
+[0.129s] make: *** [Makefile:141: all] Error 2
+[0.131s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j16 -l16

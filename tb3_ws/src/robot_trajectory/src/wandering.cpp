@@ -4,18 +4,28 @@
 #include "geometry_msgs/msg/twist.hpp"
 #include <cmath> //M_PI
 
+#include <vector>
+
 using namespace std::chrono_literals;
 
 std::vector<float> vector;
 
 void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
-	{
+   {
+	
 	vector = msg->ranges;
-	std::cout << vector[0] << std::endl;
-	std::cout << vector[90] << std::endl;
-	std::cout << vector[180] << std::endl;
-	std::cout << vector[270] << std::endl;
+	
+	for ( int i = 9; i>0; i--) {
+    std::cout << vector[i] << " ";
     }
+    
+    for ( int i = 359; i>350; i--) {
+    std::cout << vector[i] << " ";
+    }
+    
+    std::cout << std::endl;
+    
+   }
     
 
 int main(int argc, char * argv[]) 	
