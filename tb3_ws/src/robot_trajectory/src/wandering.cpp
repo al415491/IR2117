@@ -29,7 +29,10 @@ void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
     
     if (vector[0] < 1){
     	stop = true;
+    } else {
+    	stop = false;
     }
+    
     
     std::cout << std::endl;
     
@@ -75,6 +78,22 @@ int main(int argc, char * argv[])
   publisher->publish(message);
   rclcpp::spin_some(node);
   loop_rate.sleep();
+  
+
+  while (rclcpp::ok() && stop==true) // girar izquierda 
+  {  
+   	message.linear.x = 0;
+  	message.angular.z = 0.5;
+    publisher->publish(message);
+    rclcpp::spin_some(node);
+    loop_rate.sleep();
+    
+  }
+  message.angular.z = 0;
+  publisher->publish(message);
+  rclcpp::spin_some(node);
+  loop_rate.sleep();
+  
   
   rclcpp::shutdown();
   return 0;
