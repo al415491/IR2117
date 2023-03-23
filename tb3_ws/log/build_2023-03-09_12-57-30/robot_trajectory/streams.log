@@ -1,0 +1,13 @@
+[0.018s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j16 -l16
+[0.058s] [35m[1mScanning dependencies of target square_odom[0m
+[0.077s] [ 50%] Built target square
+[0.079s] [ 75%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[1.199s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K In function ‘[01m[Kvoid topic_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.199s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:47:19:[m[K [01;31m[Kerror: [m[K‘[01m[KM_Pi[m[K’ was not declared in this scope; did you mean ‘[01m[KM_PI[m[K’?
+[1.200s]    47 |      angle += 2 * [01;31m[KM_Pi[m[K
+[1.200s]       |                   [01;31m[K^~~~[m[K
+[1.200s]       |                   [32m[KM_PI[m[K
+[2.692s] make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Error 1
+[2.692s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/square_odom.dir/all] Error 2
+[2.693s] make: *** [Makefile:141: all] Error 2
+[2.695s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j16 -l16

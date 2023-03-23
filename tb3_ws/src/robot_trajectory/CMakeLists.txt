@@ -20,6 +20,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)  #laserScan
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -27,14 +28,17 @@ find_package(nav_msgs REQUIRED)
 add_executable(square src/square.cpp)
 add_executable(square_odom src/square_odom.cpp)
 add_executable(square_iterations src/square_iterations.cpp)
+add_executable(wandering src/wandering.cpp)
 ament_target_dependencies(square rclcpp geometry_msgs)
 ament_target_dependencies(square_iterations rclcpp geometry_msgs)
 ament_target_dependencies(square_odom rclcpp nav_msgs)
+ament_target_dependencies(wandering rclcpp nav_msgs sensor_msgs)
 
 install (TARGETS
   square
   square_odom
   square_iterations
+  wandering
   DESTINATION lib/${PROJECT_NAME}
 )
 

@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named square_iterations
+
+# Build rule for target.
+square_iterations: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 square_iterations
+.PHONY : square_iterations
+
+# fast build rule for target.
+square_iterations/fast:
+	$(MAKE) -f CMakeFiles/square_iterations.dir/build.make CMakeFiles/square_iterations.dir/build
+.PHONY : square_iterations/fast
+
+#=============================================================================
 # Target rules for targets named square_odom
 
 # Build rule for target.
@@ -246,6 +259,33 @@ src/square.cpp.s:
 	$(MAKE) -f CMakeFiles/square.dir/build.make CMakeFiles/square.dir/src/square.cpp.s
 .PHONY : src/square.cpp.s
 
+src/square_iterations.o: src/square_iterations.cpp.o
+
+.PHONY : src/square_iterations.o
+
+# target to build an object file
+src/square_iterations.cpp.o:
+	$(MAKE) -f CMakeFiles/square_iterations.dir/build.make CMakeFiles/square_iterations.dir/src/square_iterations.cpp.o
+.PHONY : src/square_iterations.cpp.o
+
+src/square_iterations.i: src/square_iterations.cpp.i
+
+.PHONY : src/square_iterations.i
+
+# target to preprocess a source file
+src/square_iterations.cpp.i:
+	$(MAKE) -f CMakeFiles/square_iterations.dir/build.make CMakeFiles/square_iterations.dir/src/square_iterations.cpp.i
+.PHONY : src/square_iterations.cpp.i
+
+src/square_iterations.s: src/square_iterations.cpp.s
+
+.PHONY : src/square_iterations.s
+
+# target to generate assembly for a file
+src/square_iterations.cpp.s:
+	$(MAKE) -f CMakeFiles/square_iterations.dir/build.make CMakeFiles/square_iterations.dir/src/square_iterations.cpp.s
+.PHONY : src/square_iterations.cpp.s
+
 src/square_odom.o: src/square_odom.cpp.o
 
 .PHONY : src/square_odom.o
@@ -286,6 +326,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... square_iterations"
 	@echo "... square_odom"
 	@echo "... square"
 	@echo "... robot_trajectory_uninstall"
@@ -293,6 +334,9 @@ help:
 	@echo "... src/square.o"
 	@echo "... src/square.i"
 	@echo "... src/square.s"
+	@echo "... src/square_iterations.o"
+	@echo "... src/square_iterations.i"
+	@echo "... src/square_iterations.s"
 	@echo "... src/square_odom.o"
 	@echo "... src/square_odom.i"
 	@echo "... src/square_odom.s"

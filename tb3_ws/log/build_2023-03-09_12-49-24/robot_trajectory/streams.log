@@ -1,0 +1,12 @@
+[0.015s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j16 -l16
+[0.050s] [35m[1mScanning dependencies of target square_odom[0m
+[0.065s] [ 50%] Built target square
+[0.068s] [ 75%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[1.165s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.165s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:84:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kside[m[K’ was not declared in this scope
+[1.165s]    84 |   [01;31m[Kside[m[K++;
+[1.165s]       |   [01;31m[K^~~~[m[K
+[2.524s] make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Error 1
+[2.524s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/square_odom.dir/all] Error 2
+[2.524s] make: *** [Makefile:141: all] Error 2
+[2.526s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j16 -l16

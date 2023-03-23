@@ -1,9 +1,0 @@
-[35m[1mScanning dependencies of target square[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/square.dir/src/square.cpp.o[0m
-[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kturtlesim/msg/velocity.hpp: No such file or directory
-    2 | #include [01;31m[K"turtlesim/msg/velocity.hpp"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-make[2]: *** [CMakeFiles/square.dir/build.make:63: CMakeFiles/square.dir/src/square.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/square.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

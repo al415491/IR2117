@@ -1,9 +1,0 @@
-[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:8:1:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kauto x[m[K’ has no initializer
-    8 | [01;31m[Kauto[m[K x;
-      | [01;31m[K^~~~[m[K
-[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:9:1:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kauto y[m[K’ has no initializer
-    9 | [01;31m[Kauto[m[K y;
-      | [01;31m[K^~~~[m[K
-make[2]: *** [CMakeFiles/square_odom.dir/build.make:63: CMakeFiles/square_odom.dir/src/square_odom.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/square_odom.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2
