@@ -6,9 +6,15 @@
 
 using namespace std::chrono_literals;
 
+std::vector<float> vector;
+
 void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
-{
-	std::cout << msg << std::endl;
+	{
+	vector = msg->ranges;
+	std::cout << vector[0] << std::endl;
+	std::cout << vector[90] << std::endl;
+	std::cout << vector[180] << std::endl;
+	std::cout << vector[270] << std::endl;
     }
     
 
@@ -24,6 +30,8 @@ int main(int argc, char * argv[])
   auto publisher = node->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
   geometry_msgs::msg::Twist message;
   rclcpp::WallRate loop_rate(10ms);
+  
+  const sensor_msgs::msg::LaserScan::SharedPtr msg;
   
    while (rclcpp::ok()) // move forward 
   {
