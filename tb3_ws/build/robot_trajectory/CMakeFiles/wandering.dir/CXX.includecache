@@ -17,6 +17,8 @@ geometry_msgs/msg/twist.hpp
 /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/geometry_msgs/msg/twist.hpp
 cmath
 -
+Eigen/Dense
+-
 vector
 -
 
