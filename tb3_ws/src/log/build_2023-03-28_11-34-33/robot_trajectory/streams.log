@@ -1,0 +1,17 @@
+[0.013s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/robot_trajectory -- -j16 -l16
+[0.045s] [35m[1mScanning dependencies of target wandering[0m
+[0.045s] [35m[1mScanning dependencies of target square[0m
+[0.045s] [35m[1mScanning dependencies of target square_odom[0m
+[0.045s] [35m[1mScanning dependencies of target square_iterations[0m
+[0.073s] [ 37%] [32mBuilding CXX object CMakeFiles/square_iterations.dir/src/square_iterations.cpp.o[0m
+[0.073s] [ 37%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[0.073s] [ 37%] [32mBuilding CXX object CMakeFiles/square.dir/src/square.cpp.o[0m
+[0.074s] [ 50%] [32mBuilding CXX object CMakeFiles/square_odom.dir/src/square_odom.cpp.o[0m
+[2.530s] [ 62%] [32m[1mLinking CXX executable square[0m
+[2.580s] [ 75%] [32m[1mLinking CXX executable square_iterations[0m
+[2.668s] [ 75%] Built target square
+[2.714s] [ 75%] Built target square_iterations
+[4.288s] [ 87%] [32m[1mLinking CXX executable square_odom[0m
+[4.481s] [ 87%] Built target square_odom
+[5.011s] [100%] [32m[1mLinking CXX executable wandering[0m
+[5.191s] [100%] Built target wandering

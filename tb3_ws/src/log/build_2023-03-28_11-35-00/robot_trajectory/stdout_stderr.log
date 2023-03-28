@@ -1,0 +1,28 @@
+[100%] Built target wandering
+[100%] Built target square
+[100%] Built target square_iterations
+[100%] Built target square_odom
+-- Install configuration: ""
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/lib/robot_trajectory/square
+-- Set runtime path of "/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/lib/robot_trajectory/square" to ""
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/lib/robot_trajectory/square_odom
+-- Set runtime path of "/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/lib/robot_trajectory/square_odom" to ""
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/lib/robot_trajectory/square_iterations
+-- Set runtime path of "/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/lib/robot_trajectory/square_iterations" to ""
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/lib/robot_trajectory/wandering
+-- Set runtime path of "/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/lib/robot_trajectory/wandering" to ""
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/ament_index/resource_index/package_run_dependencies/robot_trajectory
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/ament_index/resource_index/parent_prefix_path/robot_trajectory
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/environment/ament_prefix_path.sh
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/environment/ament_prefix_path.dsv
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/environment/path.sh
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/environment/path.dsv
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/local_setup.bash
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/local_setup.sh
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/local_setup.zsh
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/local_setup.dsv
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/package.dsv
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/ament_index/resource_index/packages/robot_trajectory
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/cmake/robot_trajectoryConfig.cmake
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/cmake/robot_trajectoryConfig-version.cmake
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/package.xml

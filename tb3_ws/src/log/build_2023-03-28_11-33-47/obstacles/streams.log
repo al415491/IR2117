@@ -1,0 +1,83 @@
+[0.017s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles': /usr/bin/cmake /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles -DCMAKE_INSTALL_PREFIX=/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles
+[0.121s] -- The C compiler identification is GNU 9.4.0
+[0.162s] -- The CXX compiler identification is GNU 9.4.0
+[0.168s] -- Check for working C compiler: /usr/bin/cc
+[0.217s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.218s] -- Detecting C compiler ABI info
+[0.269s] -- Detecting C compiler ABI info - done
+[0.286s] -- Detecting C compile features
+[0.286s] -- Detecting C compile features - done
+[0.290s] -- Check for working CXX compiler: /usr/bin/c++
+[0.349s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.351s] -- Detecting CXX compiler ABI info
+[0.412s] -- Detecting CXX compiler ABI info - done
+[0.421s] -- Detecting CXX compile features
+[0.422s] -- Detecting CXX compile features - done
+[0.425s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.445s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.445s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.618s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.659s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.666s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.727s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.751s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.817s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.870s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.871s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.873s] -- Looking for pthread.h
+[0.924s] -- Looking for pthread.h - found
+[0.924s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.979s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.979s] -- Looking for pthread_create in pthreads
+[1.023s] -- Looking for pthread_create in pthreads - not found
+[1.023s] -- Looking for pthread_create in pthread
+[1.073s] -- Looking for pthread_create in pthread - found
+[1.073s] -- Found Threads: TRUE  
+[1.209s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.311s] CMake Error at CMakeLists.txt:22 (find_package):
+[1.311s]   find_package called with invalid argument "interfaces"
+[1.311s] 
+[1.311s] 
+[1.312s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.351s] Error parsing '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/package.xml':
+[1.444s] Traceback (most recent call last):
+[1.444s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string
+[1.444s]     root = dom.parseString(data)
+[1.444s]   File "/usr/lib/python3.8/xml/dom/minidom.py", line 1969, in parseString
+[1.444s]     return expatbuilder.parseString(string)
+[1.444s]   File "/usr/lib/python3.8/xml/dom/expatbuilder.py", line 925, in parseString
+[1.445s]     return builder.parseString(string)
+[1.445s]   File "/usr/lib/python3.8/xml/dom/expatbuilder.py", line 223, in parseString
+[1.445s]     parser.Parse(string, True)
+[1.445s] xml.parsers.expat.ExpatError: mismatched tag: line 18, column 36
+[1.445s] 
+[1.445s] During handling of the above exception, another exception occurred:
+[1.445s] 
+[1.445s] Traceback (most recent call last):
+[1.445s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 143, in <module>
+[1.445s]     main()
+[1.445s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 52, in main
+[1.445s]     raise e
+[1.445s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 48, in main
+[1.445s]     package = parse_package_string(
+[1.445s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string
+[1.445s]     raise InvalidPackage('The manifest contains invalid XML:\n%s' % ex, filename)
+[1.445s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/package.xml':
+[1.446s] The manifest contains invalid XML:
+[1.446s] mismatched tag: line 18, column 36
+[1.458s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):
+[1.458s]   execute_process(/usr/bin/python3
+[1.458s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[1.458s]   /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/package.xml
+[1.458s]   /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles/ament_cmake_core/package.cmake)
+[1.458s]   returned error code 1
+[1.458s] Call Stack (most recent call first):
+[1.458s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[1.459s]   /opt/ros/foxy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[1.459s]   CMakeLists.txt:35 (ament_lint_auto_find_test_dependencies)
+[1.459s] 
+[1.459s] 
+[1.459s] -- Configuring incomplete, errors occurred!
+[1.459s] See also "/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles/CMakeFiles/CMakeOutput.log".
+[1.459s] See also "/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles/CMakeFiles/CMakeError.log".
+[1.466s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles' returned '1': /usr/bin/cmake /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles -DCMAKE_INSTALL_PREFIX=/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles
