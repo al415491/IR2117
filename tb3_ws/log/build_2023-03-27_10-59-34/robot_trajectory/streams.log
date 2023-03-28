@@ -1,0 +1,17 @@
+[0.011s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j16 -l16
+[0.038s] [35m[1mScanning dependencies of target wandering[0m
+[0.051s] [ 50%] Built target square
+[0.051s] [ 62%] Built target square_iterations
+[0.051s] [ 75%] Built target square_odom
+[0.054s] [ 87%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[0.158s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:129:1:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+[0.159s]   129 | /*
+[0.159s]       |  
+[1.578s] [100%] [32m[1mLinking CXX executable wandering[0m
+[1.634s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[1.634s] (.text+0x24): undefined reference to `main'
+[1.635s] collect2: error: ld returned 1 exit status
+[1.635s] make[2]: *** [CMakeFiles/wandering.dir/build.make:141: wandering] Error 1
+[1.635s] make[1]: *** [CMakeFiles/Makefile2:84: CMakeFiles/wandering.dir/all] Error 2
+[1.636s] make: *** [Makefile:141: all] Error 2
+[1.638s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j16 -l16

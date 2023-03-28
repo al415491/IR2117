@@ -1,0 +1,7 @@
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:109:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop[m[K’ was not declared in this scope
+  109 |   while (rclcpp::ok() && [01;31m[Kstop[m[K==true) // girar izquierda
+      |                          [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:84: CMakeFiles/wandering.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

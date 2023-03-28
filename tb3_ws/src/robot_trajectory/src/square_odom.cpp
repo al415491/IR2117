@@ -108,8 +108,7 @@ int main(int argc, char * argv[])
   double target_angle = M_PI_2 + initial_angle;
  
   if (target_angle > 2*M_PI) { // Por unas céntesimas puede que el robot se quede girando en bucle
-  	target_angle = 6.28
-  	;
+  	target_angle = 6.275;
   }
   std::cout << "target angle: " << target_angle << std::endl;
   

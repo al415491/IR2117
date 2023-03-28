@@ -7,13 +7,16 @@
 
 #include <vector>
 
+
 using namespace std::chrono_literals;
 
 std::vector<float> vector;
 float min_val0;
 float min_val350;
-bool stop = false;
-float angular;
+bool obstacle = false;
+bool turn_left = false;
+bool turn_right = false;
+float angular = 0.3;
 
 void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
    {
@@ -30,9 +33,9 @@ void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
     }
     
     if (vector[0] < 1){
-    	stop = true;
+    	obstacle = true;
     } else {
-    	stop = false;
+    	obstacle = false;
     }
     
     
@@ -69,107 +72,62 @@ int main(int argc, char * argv[])
   
   const sensor_msgs::msg::LaserScan::SharedPtr msg;
   
-  //std::cout << vector[0] << std::endl;
+  std::cout << "" << std::endl;
   
-  while (rclcpp::ok() && stop==false) // move forward 
-  {
-   	message.linear.x = 0.5;
+  while (rclcpp::ok()) // move forward 
+  { 
+  	if ( !turn_left && !turn_right ) {
+  	while (rclcpp::ok() && obstacle == false) {
+  	message.linear.x = 0.5;
   	message.angular.z = 0;
     publisher->publish(message);
     rclcpp::spin_some(node);
     loop_rate.sleep();
-    
-  }
-  
-  message.linear.x = 0;
-  publisher->publish(message);
-  rclcpp::spin_some(node);
-  loop_rate.sleep();
-  
-   if ( min_val0 > min_val350) {
-   		angular = 0.5;
-   	} else {
-   		angular = -0.5;
   	}
   
-
-  while (rclcpp::ok() && stop==true) // girar izquierda 
-  {  
-   	message.linear.x = 0;
-  	message.angular.z = angular;
-    publisher->publish(message);
-    rclcpp::spin_some(node);
-    loop_rate.sleep();
     
+   	if ( min_val0 > min_val350) {
+   		turn_left = true;
+   	} else {
+   		turn_right = true;
+  		} 
+  	}
+  	
+  	if ( turn_left ) {
+  		while (rclcpp::ok() && obstacle == true) {
+  		message.linear.x = 0;
+  		message.angular.z = angular;
+    	publisher->publish(message);
+    	rclcpp::spin_some(node);
+    	loop_rate.sleep();
+  	}
+  	turn_left = false; 
+  	}
+  	
+  	
+  	if ( turn_right ) {
+  		while (rclcpp::ok() && obstacle == true) {
+  		message.linear.x = 0;
+  		message.angular.z = 0 - angular;
+    	publisher->publish(message);
+    	rclcpp::spin_some(node);
+    	loop_rate.sleep();
+  	} 
+  	turn_right = false;
+  	}
+  	
   }
+  
+  
+  message.linear.x = 0;
   message.angular.z = 0;
   publisher->publish(message);
   rclcpp::spin_some(node);
   loop_rate.sleep();
-  
-  
+    
   rclcpp::shutdown();
   return 0;
 }
 
-/*
-  node->declare_parameter("linear_speed", 0.2);
-  node->declare_parameter("angular_speed", 0.2);
-  node->declare_parameter("square_length", 1.0);
-  double linear_speed = node->get_parameter("linear_speed").get_parameter_value().get<double>();
-  double angular_speed = node->get_parameter("angular_speed").get_parameter_value().get<double>();
-  double square_length = node->get_parameter("square_length").get_parameter_value().get<double>();
-  
-  
-  for ( int i = 1; i<=4; i++ ) {
-  
-  
-  while (rclcpp::ok() && (distance<square_length)) // move forward 
-  {
-   	message.linear.x = linear_speed;
-  	message.angular.z = 0;
-    publisher->publish(message);
-    rclcpp::spin_some(node);
-    loop_rate.sleep();
-  }
- 
-  // send zero velocity to topic
-  
-  
-  message.linear.x = 0;
-  publisher->publish(message);
-  rclcpp::spin_some(node);
-  loop_rate.sleep();
-  initial_xp = xp;
-  initial_yp = yp;
-  loop_rate.sleep();
-  
-  
-  double target_angle = M_PI_2 + initial_angle;
- 
-  if (target_angle > 2*M_PI) { // Por unas céntesimas puede que el robot se quede girando en bucle
-  	target_angle = 6.28
-  	;
-  }
-  std::cout << "target angle: " << target_angle << std::endl;
-  
-  
-  while (rclcpp::ok() && (angle < (target_angle) )) // turn 90 
-  {
-   std::cout << target_angle << std::endl;
-   message.linear.x = 0;
-   if ( (target_angle - angle) > 0.25 ) {
-   	message.angular.z = angular_speed;
-   } else {
-   		message.angular.z = 0.1;
-   }
-   publisher->publish(message);
-   rclcpp::spin_some(node);
-   loop_rate.sleep();
-  }
-  message.angular.z = 0;
-  publisher->publish(message);
-  initial_angle = angle;
-  loop_rate.sleep(); 
-  */
+
 
