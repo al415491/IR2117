@@ -1,0 +1,18 @@
+[0.024s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles -- -j16 -l16
+[0.058s] [35m[1mScanning dependencies of target detector[0m
+[0.078s] [ 50%] [32mBuilding CXX object CMakeFiles/detector.dir/src/detector.cpp.o[0m
+[1.035s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:[m[K In function ‘[01m[Kvoid callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.035s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:8:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.035s]     8 | void callback([01;35m[Kconst sensor_msgs::msg::LaserScan::SharedPtr msg[m[K)
+[1.035s]       |               [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.044s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.044s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:22:84:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Krclcpp[m[K’
+[1.044s]    22 |   publisher = node->create_publisher<example_interfaces::msg::Bool>("obstacle", 10)
+[1.044s]       |                                                                                    [01;31m[K^[m[K
+[1.045s]       |                                                                                    [32m[K;[m[K
+[1.045s]    23 |   [32m[Krclcpp[m[K::spin(node);
+[1.045s]       |   [32m[K~~~~~~[m[K                                                                            
+[2.242s] make[2]: *** [CMakeFiles/detector.dir/build.make:63: CMakeFiles/detector.dir/src/detector.cpp.o] Error 1
+[2.242s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/detector.dir/all] Error 2
+[2.242s] make: *** [Makefile:141: all] Error 2
+[2.244s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles -- -j16 -l16

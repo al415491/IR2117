@@ -1,0 +1,4 @@
+Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles -- -j16 -l16
+Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles -- -j16 -l16
+Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles
+Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles

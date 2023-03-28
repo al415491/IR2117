@@ -1,0 +1,56 @@
+[0.023s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles -- -j16 -l16
+[0.044s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.062s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.221s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.248s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.251s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.346s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.386s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.388s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.506s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.603s] -- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+[0.696s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.749s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.751s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.751s] -- Configured cppcheck include dirs: 
+[0.751s] -- Configured cppcheck exclude dirs and/or files: 
+[0.753s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.753s] -- Configured cpplint exclude dirs and/or files: 
+[0.753s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.754s] -- Added test 'lint_cmake' to check CMake code style
+[0.754s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.756s] -- Added test 'uncrustify' to check C / C++ code style
+[0.756s] -- Configured uncrustify additional arguments: 
+[0.757s] -- Added test 'xmllint' to check XML markup files
+[0.758s] -- Configuring done
+[0.767s] -- Generating done
+[0.768s] -- Build files have been written to: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles
+[0.788s] [35m[1mScanning dependencies of target detector[0m
+[0.812s] [ 50%] [32mBuilding CXX object CMakeFiles/detector.dir/src/detector.cpp.o[0m
+[1.820s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:[m[K In function ‘[01m[Kvoid topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.820s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/detector.cpp:7:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.821s]     7 | void topic_callback([01;35m[Kconst sensor_msgs::msg::LaserScan::SharedPtr msg[m[K)
+[1.821s]       |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[4.463s] [100%] [32m[1mLinking CXX executable detector[0m
+[4.633s] [100%] Built target detector
+[4.641s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles -- -j16 -l16
+[4.658s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles
+[4.665s] -- Install configuration: ""
+[4.666s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/lib/obstacles/detector
+[4.667s] -- Set runtime path of "/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/lib/obstacles/detector" to ""
+[4.667s] -- Up-to-date: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/ament_index/resource_index/package_run_dependencies/obstacles
+[4.667s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/ament_index/resource_index/parent_prefix_path/obstacles
+[4.667s] -- Up-to-date: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/environment/ament_prefix_path.sh
+[4.667s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/environment/ament_prefix_path.dsv
+[4.667s] -- Up-to-date: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/environment/path.sh
+[4.667s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/environment/path.dsv
+[4.667s] -- Up-to-date: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/local_setup.bash
+[4.667s] -- Up-to-date: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/local_setup.sh
+[4.668s] -- Up-to-date: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/local_setup.zsh
+[4.668s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/local_setup.dsv
+[4.668s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/package.dsv
+[4.668s] -- Up-to-date: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/ament_index/resource_index/packages/obstacles
+[4.668s] -- Up-to-date: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/cmake/obstaclesConfig.cmake
+[4.668s] -- Up-to-date: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/cmake/obstaclesConfig-version.cmake
+[4.668s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/package.xml
+[4.671s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/build/obstacles

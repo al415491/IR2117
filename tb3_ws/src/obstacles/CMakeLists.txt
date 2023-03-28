@@ -29,6 +29,7 @@ ament_target_dependencies(detector rclcpp sensor_msgs example_interfaces)
 
 install (TARGETS
   detector
+  
   DESTINATION lib/${PROJECT_NAME}
 )
 
