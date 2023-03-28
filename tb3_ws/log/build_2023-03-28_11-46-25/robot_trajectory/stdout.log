@@ -1,0 +1,6 @@
+[ 12%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[ 87%] Built target square_odom
+[ 87%] Built target square_iterations
+[ 87%] Built target square
+[100%] [32m[1mLinking CXX executable wandering[0m
+[100%] Built target wandering
