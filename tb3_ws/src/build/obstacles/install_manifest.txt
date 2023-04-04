@@ -1,4 +1,5 @@
 /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/lib/obstacles/detector
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/launch/detector_test.launch.py
 /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/ament_index/resource_index/package_run_dependencies/obstacles
 /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/ament_index/resource_index/parent_prefix_path/obstacles
 /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles/share/obstacles/environment/ament_prefix_path.sh
