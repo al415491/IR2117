@@ -1,0 +1,55 @@
+[0.019s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/obstacles -- -j16 -l16
+[0.041s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.060s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.209s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.233s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.235s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.319s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.355s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.356s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.461s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.543s] -- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+[0.622s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.674s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.675s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.675s] -- Configured cppcheck include dirs: 
+[0.675s] -- Configured cppcheck exclude dirs and/or files: 
+[0.677s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.677s] -- Configured cpplint exclude dirs and/or files: 
+[0.677s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.677s] -- Added test 'lint_cmake' to check CMake code style
+[0.678s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.679s] -- Added test 'uncrustify' to check C / C++ code style
+[0.679s] -- Configured uncrustify additional arguments: 
+[0.679s] -- Added test 'xmllint' to check XML markup files
+[0.682s] -- Configuring done
+[0.692s] -- Generating done
+[0.693s] -- Build files have been written to: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/obstacles
+[0.708s] [35m[1mScanning dependencies of target avoidance[0m
+[0.721s] [ 50%] Built target detector
+[0.728s] [ 75%] [32mBuilding CXX object CMakeFiles/avoidance.dir/src/avoidance.cpp.o[0m
+[1.584s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.584s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:16:86:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_subscription<geometry_msgs::msg::Twist>(const char [8], int)[m[K’
+[1.584s]    16 |   auto publisher = node->create_subscription<geometry_msgs::msg::Twist>("cmd_vel", 10[01;31m[K)[m[K;
+[1.585s]       |                                                                                      [01;31m[K^[m[K
+[1.585s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.585s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[1.585s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.585s]                  from [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:2[m[K:
+[1.585s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[1.585s]   213 |   [01;36m[Kcreate_subscription[m[K(
+[1.585s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.585s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.585s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:16:86:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 2 provided
+[1.585s]    16 |   auto publisher = node->create_subscription<geometry_msgs::msg::Twist>("cmd_vel", 10[01;36m[K)[m[K;
+[1.585s]       |                                                                                      [01;36m[K^[m[K
+[1.586s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:22:27:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kloop_rate[m[K’
+[1.586s]    22 |    rclcpp::spin_some(node)
+[1.586s]       |                           [01;31m[K^[m[K
+[1.586s]       |                           [32m[K;[m[K
+[1.586s]    23 |    [32m[Kloop_rate[m[K.sleep();
+[1.586s]       |    [32m[K~~~~~~~~~[m[K               
+[1.844s] make[2]: *** [CMakeFiles/avoidance.dir/build.make:63: CMakeFiles/avoidance.dir/src/avoidance.cpp.o] Error 1
+[1.845s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/avoidance.dir/all] Error 2
+[1.845s] make: *** [Makefile:141: all] Error 2
+[1.846s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/obstacles' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/obstacles -- -j16 -l16
