@@ -1,0 +1,4 @@
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:50:9:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KS3[m[K’ not handled in switch [[01;35m[K-Wswitch[m[K]
+   50 |  switch [01;35m[K([m[Kstate) {
+      |         [01;35m[K^[m[K

@@ -1,0 +1,37 @@
+[0.017s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/obstacles -- -j16 -l16
+[0.045s] [35m[1mScanning dependencies of target avoidance[0m
+[0.059s] [ 50%] Built target detector
+[0.062s] [ 75%] [32mBuilding CXX object CMakeFiles/avoidance.dir/src/avoidance.cpp.o[0m
+[0.894s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.894s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:59:18:[m[K [01;35m[Kwarning: [m[Kinit-statement in selection statements only available with ‘[01m[K-std=c++17[m[K’ or ‘[01m[K-std=gnu++17[m[K’
+[0.894s]    59 |       } else if ([01;35m[Kfront_obstacle[m[K and !(right_obstacle or left_obstacle) {
+[0.894s]       |                  [01;35m[K^~~~~~~~~~~~~~[m[K
+[0.894s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:59:71:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+[0.894s]    59 |       } else if (front_obstacle and !(right_obstacle or left_obstacle)[01;31m[K [m[K[32m[K{[m[K
+[0.894s]       |                                                                       [01;31m[K^[m[K[32m[K~[m[K
+[0.895s]       |                                                                       [32m[K;[m[K
+[0.895s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:59:33:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[0.895s]    59 |       } else if ([01;35m[Kfront_obstacle and !(right_obstacle or left_obstacle)[m[K {
+[0.895s]       |                  [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.895s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:62:7:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kbreak[m[K’
+[0.895s]    62 |       [01;31m[Kbreak[m[K;
+[0.895s]       |       [01;31m[K^~~~~[m[K
+[0.895s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:61:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kbreak[m[K’
+[0.895s]    61 |       }
+[0.895s]       |        [01;31m[K^[m[K
+[0.895s]       |        [32m[K)[m[K
+[0.895s]    62 |       [32m[Kbreak[m[K;
+[0.895s]       |       [32m[K~~~~~[m[K
+[0.895s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:59:17:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[0.895s]    59 |       } else if [01;36m[K([m[Kfront_obstacle and !(right_obstacle or left_obstacle) {
+[0.895s]       |                 [01;36m[K^[m[K
+[0.895s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:62:12:[m[K [01;35m[Kwarning: [m[Ksuggest braces around empty body in an ‘[01m[Kif[m[K’ statement [[01;35m[K-Wempty-body[m[K]
+[0.895s]    62 |       break[01;35m[K;[m[K
+[0.895s]       |            [01;35m[K^[m[K
+[0.895s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:50:9:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KS3[m[K’ not handled in switch [[01;35m[K-Wswitch[m[K]
+[0.895s]    50 |  switch [01;35m[K([m[Kstate) {
+[0.895s]       |         [01;35m[K^[m[K
+[1.882s] make[2]: *** [CMakeFiles/avoidance.dir/build.make:63: CMakeFiles/avoidance.dir/src/avoidance.cpp.o] Error 1
+[1.883s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/avoidance.dir/all] Error 2
+[1.883s] make: *** [Makefile:141: all] Error 2
+[1.884s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/obstacles' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/obstacles -- -j16 -l16

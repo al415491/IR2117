@@ -1,0 +1,22 @@
+[0.019s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/obstacles -- -j16 -l16
+[0.047s] [35m[1mScanning dependencies of target avoidance[0m
+[0.061s] [ 50%] Built target detector
+[0.064s] [ 75%] [32mBuilding CXX object CMakeFiles/avoidance.dir/src/avoidance.cpp.o[0m
+[0.906s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.906s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:50:9:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KS3[m[K’ not handled in switch [[01;35m[K-Wswitch[m[K]
+[0.906s]    50 |  switch [01;35m[K([m[Kstate) {
+[0.906s]       |         [01;35m[K^[m[K
+[0.913s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:[m[K At global scope:
+[0.913s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:101:21:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K;[m[K’ token
+[0.913s]   101 |   rclcpp::shutdown()[01;31m[K;[m[K
+[0.913s]       |                     [01;31m[K^[m[K
+[0.913s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:102:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+[0.913s]   102 |   [01;31m[Kreturn[m[K 0;
+[0.913s]       |   [01;31m[K^~~~~~[m[K
+[0.913s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/avoidance.cpp:103:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[0.914s]   103 | [01;31m[K}[m[K
+[0.914s]       | [01;31m[K^[m[K
+[1.915s] make[2]: *** [CMakeFiles/avoidance.dir/build.make:63: CMakeFiles/avoidance.dir/src/avoidance.cpp.o] Error 1
+[1.915s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/avoidance.dir/all] Error 2
+[1.915s] make: *** [Makefile:141: all] Error 2
+[1.917s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/obstacles' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/obstacles -- -j16 -l16
