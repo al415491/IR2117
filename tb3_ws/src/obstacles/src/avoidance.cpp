@@ -48,28 +48,33 @@ int main(int argc, char * argv[])
 	
 	switch (state) {
     	case S1:
-      		if (front_obstacle && (right_obstacle || left_obstacle)) {
+      		if (front_obstacle) {
         	state = S2;
      		}
       		break;
     	case S2:
-      		if (front_obstacle && left_obstacle) {
+      		if (left_obstacle & front_obstacle) {
         		state = S3;
-      		} else if (front_obstacle && !(right_obstacle || left_obstacle)) {
+      		} else if ( !front_obstacle ) {
+        		state = S1;
+      		}
+      		break;
+      	case S3:
+      		if (!front_obstacle) {
         		state = S1;
       		}
       		break;
   	}
 
   	if (state == S1) {
-    	message.linear.x = 0.3;
+    	message.linear.x = 0.5;
     	message.angular.z = 0;
   	} else if (state == S2) {
     	message.linear.x = 0;
-    	message.angular.z = 0.3;
+    	message.angular.z = 0.5;
   	} else if (state == S3) {
     	message.linear.x = 0;
-    	message.angular.z = -0.3;
+    	message.angular.z = -0.5;
   	}
 
   	publisher->publish(message);
