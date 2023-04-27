@@ -1,0 +1,16 @@
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/package_run_dependencies/olympic
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/parent_prefix_path/olympic
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/ament_prefix_path.sh
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/ament_prefix_path.dsv
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/path.sh
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/path.dsv
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.bash
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.sh
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.zsh
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.dsv
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/package.dsv
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/packages/olympic
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/cmake/olympicConfig.cmake
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/cmake/olympicConfig-version.cmake
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/package.xml

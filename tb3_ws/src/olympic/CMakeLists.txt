@@ -18,14 +18,15 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(geometry_msgs REQUIRED)
 find_package(example_interfaces REQUIRED)
 
 
-add_executable(client src/rings.cpp)
-ament_target_dependencies(client rclcpp example_interfaces)
+add_executable(rings src/rings.cpp)
+ament_target_dependencies(rings rclcpp geometry_msgs)
 
 install(TARGETS
-  client
+  rings
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

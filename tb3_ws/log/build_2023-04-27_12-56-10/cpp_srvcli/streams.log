@@ -1,0 +1,21 @@
+[0.024s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic -DCMAKE_INSTALL_PREFIX=/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/cpp_srvcli
+[0.036s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.051s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.196s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.221s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.223s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.306s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.343s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.344s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.450s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.475s] -- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+[0.556s] CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+[0.556s]   ament_target_dependencies() the first argument must be a valid target name
+[0.556s] Call Stack (most recent call first):
+[0.556s]   CMakeLists.txt:26 (ament_target_dependencies)
+[0.556s] 
+[0.556s] 
+[0.557s] -- Configuring incomplete, errors occurred!
+[0.557s] See also "/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/cpp_srvcli/CMakeFiles/CMakeOutput.log".
+[0.557s] See also "/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/cpp_srvcli/CMakeFiles/CMakeError.log".
+[0.562s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/cpp_srvcli' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic -DCMAKE_INSTALL_PREFIX=/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/cpp_srvcli

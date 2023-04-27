@@ -1,0 +1,6 @@
+[0.019s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/obstacles -- -j16 -l16
+[0.087s] [35m[1mScanning dependencies of target detector[0m
+[0.103s] [ 50%] Built target avoidance
+[0.106s] [ 75%] [32mBuilding CXX object CMakeFiles/detector.dir/src/detector.cpp.o[0m
+[3.681s] [100%] [32m[1mLinking CXX executable detector[0m
+[3.856s] [100%] Built target detector
