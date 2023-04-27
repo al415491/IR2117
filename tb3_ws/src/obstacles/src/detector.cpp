@@ -12,6 +12,7 @@ double obs_threshold;
 
 void callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
    {
+    std::cout << "funciona";
 	example_interfaces::msg::Bool out_msg;
 	out_msg.data = false;
 	float angle = msg->angle_min; //

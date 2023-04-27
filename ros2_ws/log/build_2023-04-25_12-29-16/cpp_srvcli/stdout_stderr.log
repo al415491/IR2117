@@ -1,0 +1,11 @@
+[35m[1mScanning dependencies of target client[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/client.dir/src/add_two_ints_client.cpp.o[0m
+[01m[K/home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/add_two_ints_client.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+    1 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/client.dir/build.make:63: CMakeFiles/client.dir/src/add_two_ints_client.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/client.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 75%] Built target server
+make: *** [Makefile:141: all] Error 2

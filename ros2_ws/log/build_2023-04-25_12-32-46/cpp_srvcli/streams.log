@@ -1,0 +1,54 @@
+[0.025s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli': /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli -- -j16 -l16
+[0.044s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.060s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.199s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.224s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.226s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.308s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.344s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.345s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.447s] -- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+[0.525s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.556s] Error parsing '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/cpp_srvcli/package.xml':
+[0.636s] Traceback (most recent call last):
+[0.636s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string
+[0.636s]     root = dom.parseString(data)
+[0.636s]   File "/usr/lib/python3.8/xml/dom/minidom.py", line 1969, in parseString
+[0.636s]     return expatbuilder.parseString(string)
+[0.637s]   File "/usr/lib/python3.8/xml/dom/expatbuilder.py", line 925, in parseString
+[0.637s]     return builder.parseString(string)
+[0.637s]   File "/usr/lib/python3.8/xml/dom/expatbuilder.py", line 223, in parseString
+[0.637s]     parser.Parse(string, True)
+[0.637s] xml.parsers.expat.ExpatError: mismatched tag: line 14, column 23
+[0.637s] 
+[0.637s] During handling of the above exception, another exception occurred:
+[0.637s] 
+[0.637s] Traceback (most recent call last):
+[0.637s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 143, in <module>
+[0.637s]     main()
+[0.637s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 52, in main
+[0.637s]     raise e
+[0.637s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 48, in main
+[0.637s]     package = parse_package_string(
+[0.637s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string
+[0.637s]     raise InvalidPackage('The manifest contains invalid XML:\n%s' % ex, filename)
+[0.637s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/cpp_srvcli/package.xml':
+[0.637s] The manifest contains invalid XML:
+[0.637s] mismatched tag: line 14, column 23
+[0.648s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):
+[0.648s]   execute_process(/usr/bin/python3
+[0.648s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.648s]   /home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/cpp_srvcli/package.xml
+[0.648s]   /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli/ament_cmake_core/package.cmake)
+[0.648s]   returned error code 1
+[0.648s] Call Stack (most recent call first):
+[0.649s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.649s]   /opt/ros/foxy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.649s]   CMakeLists.txt:41 (ament_lint_auto_find_test_dependencies)
+[0.649s] 
+[0.649s] 
+[0.649s] -- Configuring incomplete, errors occurred!
+[0.649s] See also "/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli/CMakeFiles/CMakeOutput.log".
+[0.649s] See also "/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli/CMakeFiles/CMakeError.log".
+[0.653s] make: *** [Makefile:310: cmake_check_build_system] Error 1
+[0.655s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli' returned '2': /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli -- -j16 -l16

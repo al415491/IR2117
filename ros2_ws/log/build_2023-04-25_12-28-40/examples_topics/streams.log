@@ -1,0 +1,4 @@
+[0.015s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_topics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_topics -- -j16 -l16
+[0.057s] [100%] Built target subscriber
+[0.057s] [100%] Built target publisher
+[0.064s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_topics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/examples_topics -- -j16 -l16
