@@ -1,0 +1,115 @@
+[0.000000] (-) TimerEvent: {}
+[0.000156] (-) JobUnselected: {'identifier': 'obstacles'}
+[0.000929] (-) JobUnselected: {'identifier': 'robot_trajectory'}
+[0.000986] (olympic) JobQueued: {'identifier': 'olympic', 'dependencies': OrderedDict()}
+[0.001004] (olympic) JobStarted: {'identifier': 'olympic'}
+[0.011037] (olympic) JobProgress: {'identifier': 'olympic', 'progress': 'cmake'}
+[0.012058] (olympic) JobProgress: {'identifier': 'olympic', 'progress': 'build'}
+[0.012712] (olympic) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic', '--', '-j16', '-l16'], 'cwd': '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pau24113'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/pau24113'), ('OLDPWD', '/home/pau24113'), ('DESKTOP_SESSION', 'ubuntu-wayland'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1585'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/obstacles/src/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pau24113'), ('JOURNAL_STREAM', '8:51299'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pau24113'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/home/pau24113/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pau24113:@/tmp/.ICE-unix/1730,unix/pau24113:/tmp/.ICE-unix/1730'), ('INVOCATION_ID', 'b6adce5b8fdd4243b8da29eff6a176cf'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e8250b5d_1221_4131_8b42_bc2436659c8a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-wayland'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QZ3L41'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.123'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '77'), ('AMENT_PREFIX_PATH', '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/robot_trajectory:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/obstacles:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-wayland'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-wayland:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-wayland:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/robot_trajectory:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/obstacles:/opt/ros/foxy')]), 'shell': False}
+[0.082068] (olympic) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target rings\x1b[0m\n'}
+[0.099791] (-) TimerEvent: {}
+[0.102587] (olympic) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/rings.dir/src/rings.cpp.o\x1b[0m\n'}
+[0.199874] (-) TimerEvent: {}
+[0.300112] (-) TimerEvent: {}
+[0.400346] (-) TimerEvent: {}
+[0.500568] (-) TimerEvent: {}
+[0.600866] (-) TimerEvent: {}
+[0.701156] (-) TimerEvent: {}
+[0.801433] (-) TimerEvent: {}
+[0.901739] (-) TimerEvent: {}
+[1.001969] (-) TimerEvent: {}
+[1.033778] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:11:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kturtlesim::srv::set_pen\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.033935] (olympic) StderrLine: {'line': b'   11 | using turtlesim::srv::\x1b[01;31m\x1b[Kset_pen\x1b[m\x1b[K;\n'}
+[1.033994] (olympic) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.034988] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kset_pen\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.035102] (olympic) StderrLine: {'line': b'   14 |   std::shared_ptr<\x1b[01;31m\x1b[Kset_pen\x1b[m\x1b[K::Request>  request,\n'}
+[1.035157] (olympic) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.035209] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.035339] (olympic) StderrLine: {'line': b'   14 |   std::shared_ptr<set_pen::Request\x1b[01;31m\x1b[K>\x1b[m\x1b[K  request,\n'}
+[1.035389] (olympic) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.035962] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kset_pen\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.036039] (olympic) StderrLine: {'line': b'   14 |   std::shared_ptr<\x1b[01;31m\x1b[Kset_pen\x1b[m\x1b[K::Request>  request,\n'}
+[1.036094] (olympic) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.036146] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.036220] (olympic) StderrLine: {'line': b'   14 |   std::shared_ptr<set_pen::Request\x1b[01;31m\x1b[K>\x1b[m\x1b[K  request,\n'}
+[1.036269] (olympic) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.036730] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kset_pen\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.036809] (olympic) StderrLine: {'line': b'   14 |   std::shared_ptr<\x1b[01;31m\x1b[Kset_pen\x1b[m\x1b[K::Request>  request,\n'}
+[1.036863] (olympic) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.036914] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.036964] (olympic) StderrLine: {'line': b'   14 |   std::shared_ptr<set_pen::Request\x1b[01;31m\x1b[K>\x1b[m\x1b[K  request,\n'}
+[1.037011] (olympic) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.037058] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kvariable or field \xe2\x80\x98\x1b[01m\x1b[Kadd\x1b[m\x1b[K\xe2\x80\x99 declared void\n'}
+[1.037106] (olympic) StderrLine: {'line': b'   14 |   std::\x1b[01;31m\x1b[Kshared_ptr\x1b[m\x1b[K<set_pen::Request>  request,\n'}
+[1.037151] (olympic) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.037412] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kset_pen\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.037489] (olympic) StderrLine: {'line': b'   14 |   std::shared_ptr<\x1b[01;31m\x1b[Kset_pen\x1b[m\x1b[K::Request>  request,\n'}
+[1.037542] (olympic) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.037593] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.037642] (olympic) StderrLine: {'line': b'   14 |   std::shared_ptr<set_pen::Request\x1b[01;31m\x1b[K>\x1b[m\x1b[K  request,\n'}
+[1.037710] (olympic) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.037771] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:15:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.037819] (olympic) StderrLine: {'line': b'   15 | \x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[1.037865] (olympic) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.052379] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.052548] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:51:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Node> node\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.052631] (olympic) StderrLine: {'line': b'   51 |   std::shared_ptr<rclcpp::Node> \x1b[01;31m\x1b[Knode\x1b[m\x1b[K =\n'}
+[1.052685] (olympic) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.052772] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:25:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Node> node\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[1.052835] (olympic) StderrLine: {'line': b'   25 |   auto \x1b[01;36m\x1b[Knode\x1b[m\x1b[K = rclcpp::Node::make_shared("rings");\n'}
+[1.052882] (olympic) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.053560] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:53:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kset_pen\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.053643] (olympic) StderrLine: {'line': b'   53 |   rclcpp::Service<\x1b[01;31m\x1b[Kset_pen\x1b[m\x1b[K>::SharedPtr service =\n'}
+[1.053702] (olympic) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.053754] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:53:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.053803] (olympic) StderrLine: {'line': b'   53 |   rclcpp::Service<set_pen\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr service =\n'}
+[1.053851] (olympic) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.053899] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:53:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kservice\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.053946] (olympic) StderrLine: {'line': b'   53 |   rclcpp::Service<set_pen>::SharedPtr \x1b[01;31m\x1b[Kservice\x1b[m\x1b[K =\n'}
+[1.053993] (olympic) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.054381] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:67:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Node> node\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.054433] (olympic) StderrLine: {'line': b'   67 |   std::shared_ptr<rclcpp::Node> \x1b[01;31m\x1b[Knode\x1b[m\x1b[K =\n'}
+[1.054481] (olympic) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.054528] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:25:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Node> node\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[1.054576] (olympic) StderrLine: {'line': b'   25 |   auto \x1b[01;36m\x1b[Knode\x1b[m\x1b[K = rclcpp::Node::make_shared("rings");\n'}
+[1.054623] (olympic) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.055607] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:69:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAddTwoInts\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.055927] (olympic) StderrLine: {'line': b'   69 |   rclcpp::Client<\x1b[01;31m\x1b[KAddTwoInts\x1b[m\x1b[K>::SharedPtr client =\n'}
+[1.055989] (olympic) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.056041] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:69:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.056092] (olympic) StderrLine: {'line': b'   69 |   rclcpp::Client<AddTwoInts\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr client =\n'}
+[1.056140] (olympic) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.056194] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:69:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kclient\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.056243] (olympic) StderrLine: {'line': b'   69 |   rclcpp::Client<AddTwoInts>::SharedPtr \x1b[01;31m\x1b[Kclient\x1b[m\x1b[K =\n'}
+[1.056290] (olympic) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.056337] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:72:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[1.056385] (olympic) StderrLine: {'line': b'   72 |   auto request = std::\x1b[01;31m\x1b[Kmake_shared<AddTwoInts::Request>\x1b[m\x1b[K();\n'}
+[1.056453] (olympic) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.056517] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:72:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<AddTwoInts>()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.056567] (olympic) StderrLine: {'line': b'   72 |   auto request = std::make_shared<AddTwoInts::Request>(\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.056616] (olympic) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.056664] (olympic) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:81\x1b[m\x1b[K,\n'}
+[1.056713] (olympic) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:3\x1b[m\x1b[K:\n'}
+[1.056761] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:714:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.056896] (olympic) StderrLine: {'line': b'  714 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[1.056969] (olympic) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.057023] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:714:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.057074] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:79:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclient\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.057124] (olympic) StderrLine: {'line': b'   79 |   while (!\x1b[01;31m\x1b[Kclient\x1b[m\x1b[K->wait_for_service(1s)) {\n'}
+[1.057172] (olympic) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.057794] (olympic) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:89:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclient\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.057846] (olympic) StderrLine: {'line': b'   89 |   auto result = \x1b[01;31m\x1b[Kclient\x1b[m\x1b[K->async_send_request(request);\n'}
+[1.057903] (olympic) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.102084] (-) TimerEvent: {}
+[1.202442] (-) TimerEvent: {}
+[1.302734] (-) TimerEvent: {}
+[1.403023] (-) TimerEvent: {}
+[1.503318] (-) TimerEvent: {}
+[1.603547] (-) TimerEvent: {}
+[1.662435] (olympic) StderrLine: {'line': b'make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/rings.cpp.o] Error 1\n'}
+[1.662701] (olympic) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/rings.dir/all] Error 2\n'}
+[1.662854] (olympic) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[1.664375] (olympic) CommandEnded: {'returncode': 2}
+[1.695439] (olympic) JobEnded: {'identifier': 'olympic', 'rc': 2}
+[1.703675] (-) TimerEvent: {}
+[1.706977] (-) EventReactorShutdown: {}

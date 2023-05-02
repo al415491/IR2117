@@ -1,0 +1,85 @@
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:11:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kturtlesim::srv::set_pen[m[K’ has not been declared
+   11 | using turtlesim::srv::[01;31m[Kset_pen[m[K;
+      |                       [01;31m[K^~~~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_pen[m[K’ was not declared in this scope
+   14 |   std::shared_ptr<[01;31m[Kset_pen[m[K::Request>  request,
+      |                   [01;31m[K^~~~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   14 |   std::shared_ptr<set_pen::Request[01;31m[K>[m[K  request,
+      |                                   [01;31m[K^[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_pen[m[K’ was not declared in this scope
+   14 |   std::shared_ptr<[01;31m[Kset_pen[m[K::Request>  request,
+      |                   [01;31m[K^~~~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   14 |   std::shared_ptr<set_pen::Request[01;31m[K>[m[K  request,
+      |                                   [01;31m[K^[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_pen[m[K’ was not declared in this scope
+   14 |   std::shared_ptr<[01;31m[Kset_pen[m[K::Request>  request,
+      |                   [01;31m[K^~~~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   14 |   std::shared_ptr<set_pen::Request[01;31m[K>[m[K  request,
+      |                                   [01;31m[K^[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:8:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kadd[m[K’ declared void
+   14 |   std::[01;31m[Kshared_ptr[m[K<set_pen::Request>  request,
+      |        [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_pen[m[K’ was not declared in this scope
+   14 |   std::shared_ptr<[01;31m[Kset_pen[m[K::Request>  request,
+      |                   [01;31m[K^~~~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:14:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   14 |   std::shared_ptr<set_pen::Request[01;31m[K>[m[K  request,
+      |                                   [01;31m[K^[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:15:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   15 | [01;31m[K)[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:51:33:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::shared_ptr<rclcpp::Node> node[m[K’
+   51 |   std::shared_ptr<rclcpp::Node> [01;31m[Knode[m[K =
+      |                                 [01;31m[K^~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:25:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::shared_ptr<rclcpp::Node> node[m[K’ previously declared here
+   25 |   auto [01;36m[Knode[m[K = rclcpp::Node::make_shared("rings");
+      |        [01;36m[K^~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:53:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_pen[m[K’ was not declared in this scope
+   53 |   rclcpp::Service<[01;31m[Kset_pen[m[K>::SharedPtr service =
+      |                   [01;31m[K^~~~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:53:26:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   53 |   rclcpp::Service<set_pen[01;31m[K>[m[K::SharedPtr service =
+      |                          [01;31m[K^[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:53:39:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kservice[m[K’
+   53 |   rclcpp::Service<set_pen>::SharedPtr [01;31m[Kservice[m[K =
+      |                                       [01;31m[K^~~~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:67:33:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::shared_ptr<rclcpp::Node> node[m[K’
+   67 |   std::shared_ptr<rclcpp::Node> [01;31m[Knode[m[K =
+      |                                 [01;31m[K^~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:25:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::shared_ptr<rclcpp::Node> node[m[K’ previously declared here
+   25 |   auto [01;36m[Knode[m[K = rclcpp::Node::make_shared("rings");
+      |        [01;36m[K^~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:69:18:[m[K [01;31m[Kerror: [m[K‘[01m[KAddTwoInts[m[K’ was not declared in this scope
+   69 |   rclcpp::Client<[01;31m[KAddTwoInts[m[K>::SharedPtr client =
+      |                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:69:28:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   69 |   rclcpp::Client<AddTwoInts[01;31m[K>[m[K::SharedPtr client =
+      |                            [01;31m[K^[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:69:41:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kclient[m[K’
+   69 |   rclcpp::Client<AddTwoInts>::SharedPtr [01;31m[Kclient[m[K =
+      |                                         [01;31m[K^~~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:72:23:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   72 |   auto request = std::[01;31m[Kmake_shared<AddTwoInts::Request>[m[K();
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:72:56:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<AddTwoInts>()[m[K’
+   72 |   auto request = std::make_shared<AddTwoInts::Request>([01;31m[K)[m[K;
+      |                                                        [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:3[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:714:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  714 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:714:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:79:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+   79 |   while (![01;31m[Kclient[m[K->wait_for_service(1s)) {
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:89:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+   89 |   auto result = [01;31m[Kclient[m[K->async_send_request(request);
+      |                 [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/rings.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/rings.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
