@@ -1,0 +1,20 @@
+[0.013s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic -- -j16 -l16
+[0.039s] [35m[1mScanning dependencies of target rings[0m
+[0.055s] [ 50%] [32mBuilding CXX object CMakeFiles/rings.dir/src/rings.cpp.o[0m
+[0.966s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.967s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:91:8:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kauto result[m[K’
+[0.967s]    91 |   auto [01;31m[Kresult[m[K = client_tp->async_send_request(request_tp);
+[0.967s]       |        [01;31m[K^~~~~~[m[K
+[0.967s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:62:8:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kstd::shared_future<std::shared_ptr<turtlesim::srv::SetPen_Response_<std::allocator<void> > > > result[m[K’
+[0.967s]    62 |   auto [01;36m[Kresult[m[K = client->async_send_request(request);
+[0.967s]       |        [01;36m[K^~~~~~[m[K
+[0.974s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:120:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[0.974s]   120 | [01;31m[K}[m[K
+[0.974s]       | [01;31m[K^[m[K
+[0.974s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:23:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[0.974s]    23 | [01;36m[K{[m[K
+[0.974s]       | [01;36m[K^[m[K
+[1.764s] make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/rings.cpp.o] Error 1
+[1.764s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/rings.dir/all] Error 2
+[1.765s] make: *** [Makefile:141: all] Error 2
+[1.767s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic -- -j16 -l16
