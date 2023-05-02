@@ -29,33 +29,20 @@ int main(int argc, char* argv[])
 
   double time_for_circle = 2 * M_PI * radius / 1.0; // time to complete a circle
   int num_iterations = static_cast<int>(time_for_circle / 0.01); // number of iterations to complete a circle
-
-  for (int i = 0; i < num_iterations; i++) { // do circle
-    message.linear.x = 1;
-    message.angular.z = 2 * M_PI / time_for_circle;
-    publisher->publish(message);
-    rclcpp::spin_some(node);
-    loop_rate.sleep();
-  }
-
-  // send zero velocity to topic
-  message.linear.x = 0;
-  message.angular.z = 0;
-  publisher->publish(message);
-
-
+  
 
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Ready to set pen.");
 
   //set_pen client
-  auto client = node->create_client<SetPen>("set_pen");
+  auto client = node->create_client<SetPen>("/turtle1/set_pen");
   
   auto request = std::make_shared<SetPen::Request>();
-  request->r = std::atoll(argv[1]);
-  request->g = std::atoll(argv[2]);
-  request->b = std::atoll(argv[3]);
-  request->width = std::atoll(argv[4]);
-  request->off = std::atoll(argv[5]);
+  // set pen yellow
+  request->r = 255; 
+  request->g = 255; 
+  request->b = 0; 
+  request->width = 0; 
+  request->off = 0; 
 
   while (!client->wait_for_service(1s)) {
     if (!rclcpp::ok()) {
@@ -73,10 +60,20 @@ int main(int argc, char* argv[])
   } else  {
     RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Failed to call service SetPen");
   }
-    
+  
+  for (int i = 0; i < num_iterations; i++) { // do circle
+    message.linear.x = 1;
+    message.angular.z = 2 * M_PI / time_for_circle;
+    publisher->publish(message);
+    rclcpp::spin_some(node);
+    loop_rate.sleep();
+  }
+  // send zero velocity to topic
+  message.linear.x = 0;
+  message.angular.z = 0;
+  publisher->publish(message);
+  
   //off
   rclcpp::shutdown();
   return 0;
 }
-
-

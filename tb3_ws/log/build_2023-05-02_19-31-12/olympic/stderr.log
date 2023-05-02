@@ -1,0 +1,4 @@
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:24:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knum_iterations[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   24 |   int [01;35m[Knum_iterations[m[K = static_cast<int>(time_for_circle / 0.01); // number of iterations to complete a circle
+      |       [01;35m[K^~~~~~~~~~~~~~[m[K
