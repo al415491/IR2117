@@ -41,15 +41,11 @@ int main(int argc, char* argv[])
   
   auto request = std::make_shared<SetPen::Request>();
   // set pen yellow
-  request->r = 255; 
-  request->g = 255; 
-  request->b = 255; 
-  request->width = 2; 
-  request->off = 0;
+  request->width = 5; 
 
-  std::vector<int> r = {255, 0, 255, 255, 0};
-  std::vector<int> g = {255, 0, 0, 255, 255};
-  std::vector<int> b = {255, 255, 0, 0, 0};   
+  std::vector<int> r = {0, 0, 255, 255, 0};
+  std::vector<int> g = {0, 0, 0, 255, 255};
+  std::vector<int> b = {0, 255, 0, 0, 0};   
 
   while (!client->wait_for_service(1s)) {
     if (!rclcpp::ok()) {
@@ -73,12 +69,11 @@ int main(int argc, char* argv[])
   
   auto request_tp = std::make_shared<TeleportAbsolute::Request>();
   // tp middle
-  request_tp->x = 2.5; 
-  request_tp->y = 2.5; 
+  request_tp->x = 5.5; 
+  request_tp->y = 5.5; 
 
-
-  std::vector<float> x = {5.5, 3.0, 8.0, 4.25, 6.75};
-  std::vector<float> y = {5.5, 5.5, 5.5, 3.25, 3.25};   
+  std::vector<double> x = {5.5, (5.5-2*radius), (5.5+2*radius), (5.5-radius), (5.5+radius)};
+  std::vector<double> y = {5.5, 5.5, 5.5, (5.5-radius), (5.5-radius)};   
 
   while (!client_tp->wait_for_service(1s)) {
     if (!rclcpp::ok()) {
@@ -98,22 +93,31 @@ int main(int argc, char* argv[])
   }  
 
 
+  for (int i=0; i<5; i++) {
+    request->off = 1;
+    request->r = r[i]; 
+    request->g = g[i]; 
+    request->b = b[i];
+    request_tp->x = x[i]; 
+    request_tp->y = y[i];
+    result = client->async_send_request(request);
+    result_tp = client_tp->async_send_request(request_tp);
 
+    request->off = 0;
+    result = client->async_send_request(request); 
 
-
-
-  for (int i = 0; i < num_iterations; i++) { // do circle
-    message.linear.x = 1;
-    message.angular.z = 2 * M_PI / time_for_circle;
+    for (int j = 0; j < num_iterations; j++) { // do circle
+      message.linear.x = 1;
+      message.angular.z = 2 * M_PI / time_for_circle;
+      publisher->publish(message);
+      rclcpp::spin_some(node);
+      loop_rate.sleep();
+    }
+    // send zero velocity to topic
+    message.linear.x = 0;
+    message.angular.z = 0;
     publisher->publish(message);
-    rclcpp::spin_some(node);
-    loop_rate.sleep();
   }
-  // send zero velocity to topic
-  message.linear.x = 0;
-  message.angular.z = 0;
-  publisher->publish(message);
-  
   //off
   rclcpp::shutdown();
   return 0;
