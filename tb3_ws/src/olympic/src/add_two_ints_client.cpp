@@ -1,50 +1,116 @@
-#include "rclcpp/rclcpp.hpp"
-#include "turtlesim/srv/set_pen.hpp"
-#include <chrono>
-#include <cstdlib>
+#include <inttypes.h>
 #include <memory>
+#include "action_tutorials_interfaces/action/fibonacci.hpp"
+#include "rclcpp/rclcpp.hpp"
+#include "rclcpp_action/rclcpp_action.hpp"
+
+using Fibonacci = 
+  olympic_interfaces::action::Rings;
+
+using GoalHandleRings =
+  rclcpp_action::ClientGoalHandle<Rings>;
 
 using namespace std::chrono_literals;
-using example_interfaces::srv::AddTwoInts;
 
-int main(int argc, char **argv)
+rclcpp::Node::SharedPtr g_node = nullptr;
+
+void feedback_callback(GoalHandleRings::SharedPtr,
+  const std::shared_ptr<const Rings::Feedback> feedback)
+{
+  RCLCPP_INFO(
+    g_node->get_logger(),
+    "Next number in sequence received: %" PRId32,
+    feedback->partial_sequence.back());
+}
+
+int main(int argc, char ** argv)
 {
   rclcpp::init(argc, argv);
-  if (argc != 3) {
-  	RCLCPP_INFO(rclcpp::get_logger("rclcpp"), 
-     "usage: set_pen X Y");
-  	return 1;
+  g_node = rclcpp::Node::make_shared("action_client");
+  auto action_client = rclcpp_action::create_client<Rings>(
+    g_node, "rings");
+
+  if (!action_client->wait_for_action_server(20s)) {
+    RCLCPP_ERROR(g_node->get_logger(), 
+      "Action server not available after waiting");
+    return 1;
   }
-  std::shared_ptr<rclcpp::Node> node = 
-  rclcpp::Node::make_shared("set_pen");
-  rclcpp::Client<AddTwoInts>::SharedPtr client =
-  node->create_client<set_pen>("set_pen");
 
-  auto request = std::make_shared<AddTwoInts::Request>();
-  request->r = atoll(argv[1]);
-  request->g = atoll(argv[2]);
-  request->b = atoll(argv[3]);
-  request->width = atoll(argv[4]);
-  request->off = atoll(argv[5]);
+  auto goal_msg = Rings::Goal();
+  goal_msg.order = 10;
 
-  while (!client->wait_for_service(1s)) {
-    if (!rclcpp::ok()) {
-      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), 
-       "Interrupted while waiting for the service.");
-      return 0;
-	 }
-	 RCLCPP_INFO(rclcpp::get_logger("rclcpp"), 
-     "service not available, waiting again...");
-  }
-     
-  auto result = client->async_send_request(request);
 
-  if (rclcpp::spin_until_future_complete(node, result) !=	rclcpp::FutureReturnCode::SUCCESS)
+  RCLCPP_INFO(g_node->get_logger(), 
+    "Sending goal");
+  auto send_goal_options = 
+    rclcpp_action::Client<Rings>::SendGoalOptions();
+  send_goal_options.feedback_callback = feedback_callback;
+  auto goal_handle_future = 
+    action_client->async_send_goal(goal_msg, send_goal_options);
+
+  auto return_code = rclcpp::spin_until_future_complete(g_node,
+    goal_handle_future);
+    
+    if (return_code != rclcpp::FutureReturnCode::SUCCESS)
   {
-    RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), 
-     "Failed to call service set_pen");
+    RCLCPP_ERROR(g_node->get_logger(), 
+      "send goal call failed :(");
+    return 1;
   }
+
+  GoalHandleFibonacci::SharedPtr goal_handle = 
+    goal_handle_future.get();
+  if (!goal_handle) {
+    RCLCPP_ERROR(g_node->get_logger(), 
+      "Goal was rejected by server");
+    return 1;
+  }
+
+  auto result_future = 
+    action_client->async_get_result(goal_handle);
+
+  RCLCPP_INFO(g_node->get_logger(), "Waiting for result");
+
+  return_code = rclcpp::spin_until_future_complete(g_node, 
+    result_future);
+
+  if (return_code != rclcpp::FutureReturnCode::SUCCESS)
+  {
+    RCLCPP_ERROR(g_node->get_logger(), 
+      "get result call failed :(");
+    return 1;
+  }
+
+ GoalHandleRings::WrappedResult wrapped_result = 
+    result_future.get();
+
+  switch (wrapped_result.code) {
+    case rclcpp_action::ResultCode::SUCCEEDED:
+      break;
+    case rclcpp_action::ResultCode::ABORTED:
+      RCLCPP_ERROR(g_node->get_logger(), "Goal was aborted");
+      return 1;
+    case rclcpp_action::ResultCode::CANCELED:
+      RCLCPP_ERROR(g_node->get_logger(), "Goal was canceled");
+      return 1;
+    default:
+      RCLCPP_ERROR(g_node->get_logger(), "Unknown result code");
+      return 1;
+  }
+
+
+  RCLCPP_INFO(g_node->get_logger(), "result received");
+  for (auto number : wrapped_result.result->sequence) {
+    RCLCPP_INFO(g_node->get_logger(), "%" PRId32, number);
+  }
+
+  action_client.reset();
+  g_node.reset();
   rclcpp::shutdown();
   return 0;
 }
+
+
+    
+    
 
