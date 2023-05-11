@@ -12,13 +12,6 @@ using namespace std::chrono_literals;
 using turtlesim::srv::SetPen;
 using turtlesim::srv::TeleportAbsolute;
 
-// void add(std::shared_ptr<SetPen::Request> request)
-// {
-//   RCLCPP_INFO(rclcpp::get_logger("rclcpp"),
-//               "Incoming request\nr: %ld, g: %ld, b: %ld, width: %ld, off: %ld",
-//               request->r, request->g, request->b, request->width, request->off);
-// }
-
 int main(int argc, char* argv[])
 {
   rclcpp::init(argc, argv);
@@ -72,7 +65,7 @@ int main(int argc, char* argv[])
   request_tp->x = 5.5; 
   request_tp->y = 5.5; 
 
-  std::vector<double> x = {5.5, (5.5-2*radius), (5.5+2*radius), (5.5-radius), (5.5+radius)};
+  std::vector<double> x = {5.5, (5.5-(2*radius)-width), (5.5+width+2*radius), (5.5-radius-width), (5.5+radius)};
   std::vector<double> y = {5.5, 5.5, 5.5, (5.5-radius), (5.5-radius)};   
 
   while (!client_tp->wait_for_service(1s)) {
@@ -91,7 +84,6 @@ int main(int argc, char* argv[])
   } else  {
     RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Failed to call service SetPen");
   }  
-
 
   for (int i=0; i<5; i++) {
     request->off = 1;

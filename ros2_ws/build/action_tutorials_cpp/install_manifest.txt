@@ -1,0 +1,17 @@
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp/lib/action_tutorials_cpp/action_server
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp/lib/action_tutorials_cpp/action_client
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp/share/ament_index/resource_index/package_run_dependencies/action_tutorials_cpp
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp/share/ament_index/resource_index/parent_prefix_path/action_tutorials_cpp
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp/share/action_tutorials_cpp/environment/ament_prefix_path.sh
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp/share/action_tutorials_cpp/environment/ament_prefix_path.dsv
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp/share/action_tutorials_cpp/environment/path.sh
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp/share/action_tutorials_cpp/environment/path.dsv
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp/share/action_tutorials_cpp/local_setup.bash
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp/share/action_tutorials_cpp/local_setup.sh
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp/share/action_tutorials_cpp/local_setup.zsh
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp/share/action_tutorials_cpp/local_setup.dsv
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp/share/action_tutorials_cpp/package.dsv
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp/share/ament_index/resource_index/packages/action_tutorials_cpp
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp/share/action_tutorials_cpp/cmake/action_tutorials_cppConfig.cmake
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp/share/action_tutorials_cpp/cmake/action_tutorials_cppConfig-version.cmake
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp/share/action_tutorials_cpp/package.xml

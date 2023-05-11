@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/action_tutorials_cpp/src/action_client.cpp
+inttypes.h
+-
+memory
+-
+action_tutorials_interfaces/action/fibonacci.hpp
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/action_tutorials_cpp/src/action_tutorials_interfaces/action/fibonacci.hpp
+rclcpp/rclcpp.hpp
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/action_tutorials_cpp/src/rclcpp/rclcpp.hpp
+rclcpp_action/rclcpp_action.hpp
+/home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/action_tutorials_cpp/src/rclcpp_action/rclcpp_action.hpp
+

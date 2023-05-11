@@ -1,5 +1,5 @@
 #include "rclcpp/rclcpp.hpp"
-#include "example_interfaces/srv/add_two_ints.hpp"
+#include "turtlesim/srv/set_pen.hpp"
 #include <chrono>
 #include <cstdlib>
 #include <memory>
@@ -12,17 +12,20 @@ int main(int argc, char **argv)
   rclcpp::init(argc, argv);
   if (argc != 3) {
   	RCLCPP_INFO(rclcpp::get_logger("rclcpp"), 
-     "usage: add_two_ints_client X Y");
+     "usage: set_pen X Y");
   	return 1;
   }
   std::shared_ptr<rclcpp::Node> node = 
-  rclcpp::Node::make_shared("add_two_ints_client");
+  rclcpp::Node::make_shared("set_pen");
   rclcpp::Client<AddTwoInts>::SharedPtr client =
-  node->create_client<AddTwoInts>("add_two_ints");
+  node->create_client<set_pen>("set_pen");
 
   auto request = std::make_shared<AddTwoInts::Request>();
-  request->a = atoll(argv[1]);
-  request->b = atoll(argv[2]);
+  request->r = atoll(argv[1]);
+  request->g = atoll(argv[2]);
+  request->b = atoll(argv[3]);
+  request->width = atoll(argv[4]);
+  request->off = atoll(argv[5]);
 
   while (!client->wait_for_service(1s)) {
     if (!rclcpp::ok()) {
@@ -36,13 +39,10 @@ int main(int argc, char **argv)
      
   auto result = client->async_send_request(request);
 
-  if (rclcpp::spin_until_future_complete(node, result) ==	rclcpp::FutureReturnCode::SUCCESS)
+  if (rclcpp::spin_until_future_complete(node, result) !=	rclcpp::FutureReturnCode::SUCCESS)
   {
-    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), 
-     "Sum: %ld", result.get()->sum);
-  } else {
     RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), 
-     "Failed to call service add_two_ints");
+     "Failed to call service set_pen");
   }
   rclcpp::shutdown();
   return 0;

@@ -1,0 +1,69 @@
+[0.013s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/action_tutorials_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/action_tutorials_cpp -DCMAKE_INSTALL_PREFIX=/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp
+[0.048s] -- The C compiler identification is GNU 9.4.0
+[0.088s] -- The CXX compiler identification is GNU 9.4.0
+[0.091s] -- Check for working C compiler: /usr/bin/cc
+[0.135s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.136s] -- Detecting C compiler ABI info
+[0.181s] -- Detecting C compiler ABI info - done
+[0.191s] -- Detecting C compile features
+[0.192s] -- Detecting C compile features - done
+[0.194s] -- Check for working CXX compiler: /usr/bin/c++
+[0.256s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.257s] -- Detecting CXX compiler ABI info
+[0.312s] -- Detecting CXX compiler ABI info - done
+[0.323s] -- Detecting CXX compile features
+[0.324s] -- Detecting CXX compile features - done
+[0.326s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.348s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.348s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.496s] -- Found action_tutorials_interfaces: 0.0.0 (/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_interfaces/share/action_tutorials_interfaces/cmake)
+[0.522s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.527s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.579s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.600s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.657s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.757s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.789s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.790s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.791s] -- Looking for pthread.h
+[0.836s] -- Looking for pthread.h - found
+[0.836s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.891s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.892s] -- Looking for pthread_create in pthreads
+[0.939s] -- Looking for pthread_create in pthreads - not found
+[0.939s] -- Looking for pthread_create in pthread
+[0.994s] -- Looking for pthread_create in pthread - found
+[0.995s] -- Found Threads: TRUE  
+[1.123s] -- Found rclcpp_action: 2.4.2 (/opt/ros/foxy/share/rclcpp_action/cmake)
+[1.151s] -- Found rclcpp_components: 2.4.2 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[1.199s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.251s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.251s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.251s] -- Configured cppcheck include dirs: 
+[1.252s] -- Configured cppcheck exclude dirs and/or files: 
+[1.252s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.252s] -- Configured cpplint exclude dirs and/or files: 
+[1.253s] -- Added test 'lint_cmake' to check CMake code style
+[1.253s] -- Added test 'uncrustify' to check C / C++ code style
+[1.253s] -- Configured uncrustify additional arguments: 
+[1.254s] -- Added test 'xmllint' to check XML markup files
+[1.256s] -- Configuring done
+[1.262s] -- Generating done
+[1.263s] -- Build files have been written to: /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/action_tutorials_cpp
+[1.270s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/action_tutorials_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/action_tutorials_cpp -DCMAKE_INSTALL_PREFIX=/home/pau24113/Documents/GitHub/IR2117/ros2_ws/install/action_tutorials_cpp
+[1.270s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/action_tutorials_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/action_tutorials_cpp -- -j16 -l16
+[1.296s] [35m[1mScanning dependencies of target action_client[0m
+[1.296s] [35m[1mScanning dependencies of target action_server[0m
+[1.302s] [ 25%] [32mBuilding CXX object CMakeFiles/action_client.dir/src/action_client.cpp.o[0m
+[1.321s] [ 50%] [32mBuilding CXX object CMakeFiles/action_server.dir/src/action_server.cpp.o[0m
+[1.325s] [01m[K/home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/action_tutorials_cpp/src/action_client.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kaction_tutorials_interfaces/action/fibonacci.hpp: No such file or directory
+[1.325s]     3 | #include [01;31m[K"action_tutorials_interfaces/action/fibonacci.hpp"[m[K
+[1.325s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.325s] compilation terminated.
+[1.326s] make[2]: *** [CMakeFiles/action_client.dir/build.make:63: CMakeFiles/action_client.dir/src/action_client.cpp.o] Error 1
+[1.326s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/action_client.dir/all] Error 2
+[1.326s] make[1]: *** Waiting for unfinished jobs....
+[3.257s] [ 75%] [32m[1mLinking CXX executable action_server[0m
+[3.353s] [ 75%] Built target action_server
+[3.354s] make: *** [Makefile:141: all] Error 2
+[3.356s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/action_tutorials_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/ros2_ws/build/action_tutorials_cpp -- -j16 -l16

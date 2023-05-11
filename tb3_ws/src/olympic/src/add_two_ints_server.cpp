@@ -1,20 +1,15 @@
 #include "rclcpp/rclcpp.hpp"
-#include "example_interfaces/srv/add_two_ints.hpp"
+#include "turtlesim/srv/set_pen.hpp"
 #include <memory>
-using example_interfaces::srv::AddTwoInts;
+using turtlesim::srv::set_pen;
 
 void add(
-  std::shared_ptr<AddTwoInts::Request>  request,
-  std::shared_ptr<AddTwoInts::Response> response)
+  std::shared_ptr<set_pen::Request>  request,
+)
 {
-  response->sum = request->a + request->b;
-
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), 
     "Incoming request\na: %ld" " b: %ld",
-     request->a, request->b);
-  RCLCPP_INFO(rclcpp::get_logger("rclcpp"), 
-    "sending back response: [%ld]", 
-     (long int)response->sum);
+     request->a, request->b, request->g, request->width, request->off);
 }
 
 int main(int argc, char **argv)
@@ -22,13 +17,13 @@ int main(int argc, char **argv)
   rclcpp::init(argc, argv);
 
   std::shared_ptr<rclcpp::Node> node = 
-    rclcpp::Node::make_shared("add_two_ints_server");
+    rclcpp::Node::make_shared("set_pen_server");
 
-  rclcpp::Service<AddTwoInts>::SharedPtr service =
-	 node->create_service<AddTwoInts>("add_two_ints", &add);
+  rclcpp::Service<set_pen>::SharedPtr service =
+	 node->create_service<set_pen>("set_pen", &add);
 
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), 
-    "Ready to add two ints.");
+    "Ready to set pen.");
 
   rclcpp::spin(node);
   rclcpp::shutdown();

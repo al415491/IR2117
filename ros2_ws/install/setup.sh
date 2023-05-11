@@ -35,7 +35,7 @@ COLCON_CURRENT_PREFIX="/opt/ros/foxy"
 _colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
 
 # setting COLCON_CURRENT_PREFIX avoids relying on the build time prefix of the sourced script
-COLCON_CURRENT_PREFIX="/home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/cpp_srvcli/src/install"
+COLCON_CURRENT_PREFIX="/home/pau24113/Documents/GitHub/IR2117/ros2_ws/src/action_tutorials_interfaces/action/install"
 _colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"
 
 
