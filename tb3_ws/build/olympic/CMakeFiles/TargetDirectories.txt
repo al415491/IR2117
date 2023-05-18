@@ -5,6 +5,8 @@
 /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic/CMakeFiles/rebuild_cache.dir
 /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic/CMakeFiles/edit_cache.dir
 /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic/CMakeFiles/test.dir
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic/CMakeFiles/action_client.dir
+/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic/CMakeFiles/action_server.dir
 /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic/CMakeFiles/rings.dir
 /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic/CMakeFiles/olympic_uninstall.dir
 /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic/CMakeFiles/uninstall.dir
