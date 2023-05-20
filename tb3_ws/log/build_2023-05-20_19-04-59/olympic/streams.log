@@ -1,0 +1,33 @@
+[0.010s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic_interfaces:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/robot_trajectory:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/obstacles:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/olympic_interfaces:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic -- -j16 -l16
+[0.040s] [35m[1mScanning dependencies of target action_server[0m
+[0.041s] [35m[1mScanning dependencies of target action_client[0m
+[0.051s] [ 16%] [32mBuilding CXX object CMakeFiles/rings.dir/src/rings.cpp.o[0m
+[0.062s] [ 50%] [32mBuilding CXX object CMakeFiles/action_server.dir/src/rings_action_server.cpp.o[0m
+[0.062s] [ 50%] [32mBuilding CXX object CMakeFiles/action_client.dir/src/rings_action_server.cpp.o[0m
+[1.132s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.132s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:68:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kwidth[m[K’ was not declared in this scope; did you mean ‘[01m[Kwcwidth[m[K’?
+[1.132s]    68 |   std::vector<double> x = {5.5, (5.5-(2*radius)-[01;31m[Kwidth[m[K), (5.5+width+2*radius), (5.5-radius-width), (5.5+radius)};
+[1.132s]       |                                                 [01;31m[K^~~~~[m[K
+[1.133s]       |                                                 [32m[Kwcwidth[m[K
+[1.133s] [01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings.cpp:68:111:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{5.5e+0, <expression error>, <expression error>, <expression error>, (5.5e+0 + radius)}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’
+[1.133s]    68 |   std::vector<double> x = {5.5, (5.5-(2*radius)-width), (5.5+width+2*radius), (5.5-radius-width), (5.5+radius)[01;31m[K}[m[K;
+[1.133s]       |                                                                                                               [01;31m[K^[m[K
+[1.133s]       |                                                                                                               [01;31m[K|[m[K
+[1.133s]       |                                                                                                               [01;31m[K<brace-enclosed initializer list>[m[K
+[2.074s] make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/rings.cpp.o] Error 1
+[2.074s] make[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/rings.dir/all] Error 2
+[2.074s] make[1]: *** Waiting for unfinished jobs....
+[2.191s] [ 66%] [32m[1mLinking CXX executable action_server[0m
+[2.207s] [ 83%] [32m[1mLinking CXX executable action_client[0m
+[2.328s] /usr/bin/ld: CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: in function `handle_accepted(std::shared_ptr<rclcpp_action::ServerGoalHandle<olympic_interfaces::action::Rings> >)':
+[2.329s] rings_action_server.cpp:(.text+0x789): undefined reference to `execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<olympic_interfaces::action::Rings> >)'
+[2.329s] collect2: error: ld returned 1 exit status
+[2.329s] /usr/bin/ld: CMakeFiles/action_client.dir/src/rings_action_server.cpp.o: in function `handle_accepted(std::shared_ptr<rclcpp_action::ServerGoalHandle<olympic_interfaces::action::Rings> >)':
+[2.329s] rings_action_server.cpp:(.text+0x789): undefined reference to `execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<olympic_interfaces::action::Rings> >)'
+[2.329s] collect2: error: ld returned 1 exit status
+[2.329s] make[2]: *** [CMakeFiles/action_server.dir/build.make:158: action_server] Error 1
+[2.329s] make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/action_server.dir/all] Error 2
+[2.330s] make[2]: *** [CMakeFiles/action_client.dir/build.make:158: action_client] Error 1
+[2.330s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/action_client.dir/all] Error 2
+[2.330s] make: *** [Makefile:141: all] Error 2
+[2.332s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic' returned '2': CMAKE_PREFIX_PATH=/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic_interfaces:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/robot_trajectory:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/obstacles:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/olympic_interfaces:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic -- -j16 -l16

@@ -1,0 +1,12 @@
+/usr/bin/ld: CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: in function `handle_accepted(std::shared_ptr<rclcpp_action::ServerGoalHandle<olympic_interfaces::action::Rings> >)':
+rings_action_server.cpp:(.text+0x789): undefined reference to `execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<olympic_interfaces::action::Rings> >)'
+/usr/bin/ld: CMakeFiles/action_client.dir/src/rings_action_server.cpp.o: in function `handle_accepted(std::shared_ptr<rclcpp_action::ServerGoalHandle<olympic_interfaces::action::Rings> >)':
+rings_action_server.cpp:(.text+0x789): undefined reference to `execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<olympic_interfaces::action::Rings> >)'
+collect2: error: ld returned 1 exit status
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/action_server.dir/build.make:158: action_server] Error 1
+make[2]: *** [CMakeFiles/action_client.dir/build.make:158: action_client] Error 1
+make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/action_server.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/action_client.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

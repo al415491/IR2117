@@ -4,6 +4,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
 
+/*
 using Rings = 
   olympic_interfaces::action::Rings;
 
@@ -111,7 +112,7 @@ int main(int argc, char ** argv)
   return 0;
 }
 
-
+*/
     
     
 

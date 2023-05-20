@@ -1,0 +1,16 @@
+[35m[1mScanning dependencies of target action_server[0m
+[35m[1mScanning dependencies of target action_client[0m
+[ 33%] Built target rings
+[ 50%] [32mBuilding CXX object CMakeFiles/action_server.dir/src/rings_action_server.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/action_client.dir/src/rings_action_server.cpp.o[0m
+[ 83%] [32m[1mLinking CXX executable action_client[0m
+[100%] [32m[1mLinking CXX executable action_server[0m
+[100%] Built target action_client
+[100%] Built target action_server
+-- Install configuration: ""
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings
+-- Set runtime path of "/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings" to ""
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/action_server
+-- Set runtime path of "/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/action_server" to ""
+-- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/action_client
+-- Set runtime path of "/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/action_client" to ""
