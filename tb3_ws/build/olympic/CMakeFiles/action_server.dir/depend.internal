@@ -49,6 +49,12 @@ CMakeFiles/action_server.dir/src/rings_action_server.cpp.o
  /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__traits.hpp
  /opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp
  /opt/ros/foxy/include/builtin_interfaces/msg/time.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/twist__builder.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/twist__struct.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/twist__traits.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/vector3__struct.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/detail/vector3__traits.hpp
+ /opt/ros/foxy/include/geometry_msgs/msg/twist.hpp
  /opt/ros/foxy/include/libstatistics_collector/collector/collector.hpp
  /opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp
  /opt/ros/foxy/include/libstatistics_collector/collector/metric_details_interface.hpp
@@ -335,6 +341,14 @@ CMakeFiles/action_server.dir/src/rings_action_server.cpp.o
  /opt/ros/foxy/include/tracetools/tracetools.h
  /opt/ros/foxy/include/tracetools/utils.hpp
  /opt/ros/foxy/include/tracetools/visibility_control.hpp
+ /opt/ros/foxy/include/turtlesim/srv/detail/set_pen__builder.hpp
+ /opt/ros/foxy/include/turtlesim/srv/detail/set_pen__struct.hpp
+ /opt/ros/foxy/include/turtlesim/srv/detail/set_pen__traits.hpp
+ /opt/ros/foxy/include/turtlesim/srv/detail/teleport_absolute__builder.hpp
+ /opt/ros/foxy/include/turtlesim/srv/detail/teleport_absolute__struct.hpp
+ /opt/ros/foxy/include/turtlesim/srv/detail/teleport_absolute__traits.hpp
+ /opt/ros/foxy/include/turtlesim/srv/set_pen.hpp
+ /opt/ros/foxy/include/turtlesim/srv/teleport_absolute.hpp
  /opt/ros/foxy/include/unique_identifier_msgs/msg/detail/uuid__struct.h
  /opt/ros/foxy/include/unique_identifier_msgs/msg/detail/uuid__struct.hpp
  /opt/ros/foxy/include/unique_identifier_msgs/msg/detail/uuid__traits.hpp

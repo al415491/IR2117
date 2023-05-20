@@ -48,6 +48,12 @@ CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/includ
 CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__traits.hpp
 CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp
 CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/time.hpp
+CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/twist__builder.hpp
+CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/twist__struct.hpp
+CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/twist__traits.hpp
+CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/vector3__struct.hpp
+CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/vector3__traits.hpp
+CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/twist.hpp
 CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/libstatistics_collector/collector/collector.hpp
 CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp
 CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/libstatistics_collector/collector/metric_details_interface.hpp
@@ -334,6 +340,14 @@ CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/includ
 CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/tracetools/tracetools.h
 CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/tracetools/utils.hpp
 CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/tracetools/visibility_control.hpp
+CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/set_pen__builder.hpp
+CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/set_pen__struct.hpp
+CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/set_pen__traits.hpp
+CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/teleport_absolute__builder.hpp
+CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/teleport_absolute__struct.hpp
+CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/teleport_absolute__traits.hpp
+CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/turtlesim/srv/set_pen.hpp
+CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/turtlesim/srv/teleport_absolute.hpp
 CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/unique_identifier_msgs/msg/detail/uuid__struct.h
 CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/unique_identifier_msgs/msg/detail/uuid__struct.hpp
 CMakeFiles/action_server.dir/src/rings_action_server.cpp.o: /opt/ros/foxy/include/unique_identifier_msgs/msg/detail/uuid__traits.hpp

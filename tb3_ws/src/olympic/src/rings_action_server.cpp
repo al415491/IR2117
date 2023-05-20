@@ -1,8 +1,12 @@
 #include <inttypes.h>
 #include <memory>
+#include <cmath>
 #include "olympic_interfaces/action/rings.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
+#include "geometry_msgs/msg/twist.hpp"
+#include "turtlesim/srv/set_pen.hpp"
+#include "turtlesim/srv/teleport_absolute.hpp"
 
 using Rings = 
   olympic_interfaces::action::Rings;
@@ -15,11 +19,12 @@ rclcpp_action::GoalResponse handle_goal(
   std::shared_ptr<const Rings::Goal> goal)
 {
   RCLCPP_INFO(rclcpp::get_logger("server"), 
-    "Got goal request with radius %d", goal->radius);
+    "Got goal request with radius %.2f", goal->radius);
   (void)uuid;
   return rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;
 }
 
+// Callback for dealing with cancellation. This implementation just tells the client it accepted the cancellation
 rclcpp_action::CancelResponse handle_cancel(
   const std::shared_ptr<GoalHandleRings> goal_handle)
 {
@@ -29,6 +34,8 @@ rclcpp_action::CancelResponse handle_cancel(
   return rclcpp_action::CancelResponse::ACCEPT;
 }
 
+
+// This last set of callbacks accepts a new goal and starts processing it.
 void execute(const std::shared_ptr<GoalHandleRings>);
 
 void handle_accepted(const std::shared_ptr<GoalHandleRings> goal_handle){
@@ -37,23 +44,23 @@ void handle_accepted(const std::shared_ptr<GoalHandleRings> goal_handle){
 
 
 void execute(const std::shared_ptr<GoalHandleRings> goal_handle) {
+  // Action related
   RCLCPP_INFO(rclcpp::get_logger("server"), 
     "Executing goal");
   rclcpp::Rate loop_rate(1);
   const auto goal = goal_handle->get_goal();
   auto feedback = std::make_shared<Rings::Feedback>();
   auto result = std::make_shared<Rings::Result>();
+  auto & ring_number = feedback->drawing_ring; // Reference to drawing_ring(ptr)
+  auto & ring_angle = feedback->ring_angle; // Reference to ring_angle(ptr)
   
-    for (int i = 1; (i < goal->radius) && rclcpp::ok(); ++i) {
-    if (goal_handle->is_canceling()) {
-      
-      goal_handle->canceled(result);
-      RCLCPP_INFO(rclcpp::get_logger("server"), 
-        "Goal Canceled");
-      return;
-  }
-    }
-    if (rclcpp::ok()) {
+  // Ring related
+  float radius = goal->radius;
+
+    
+    
+    if (rclcpp::ok()) { // When completed, if ROS still running:
+    result->rings_completed = ring_number;
     goal_handle->succeed(result);
     RCLCPP_INFO(rclcpp::get_logger("server"), 
       "Goal Succeeded");

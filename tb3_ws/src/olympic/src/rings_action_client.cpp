@@ -3,8 +3,10 @@
 #include "olympic_interfaces/action/rings.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
+#include <<sstream>
+#include <iomanip>
 
-/*
+
 using Rings = 
   olympic_interfaces::action::Rings;
 
@@ -15,19 +17,29 @@ using namespace std::chrono_literals;
 
 rclcpp::Node::SharedPtr g_node = nullptr;
 
+// Assuming the goal was accepted by the server, it will start processing. Any feedback to the client will be handled by the feedback_callback
 void feedback_callback(GoalHandleRings::SharedPtr,
   const std::shared_ptr<const Rings::Feedback> feedback)
 {
-  RCLCPP_INFO(
-    g_node->get_logger(),
-    "Next number in sequence received: %" PRId32,
-    feedback->partial_sequence.back());
+  std::stringstream ss;
+  ss << std::setprecision(3) << "Circle nº" << feedback->drawing_ring << " at " << feedback->ring_angle << " degrees";
+  RCLCPP_INFO(g_node->get_logger, ss.str().c_str()); //ss --> string --> char*
+
 }
+
+// The action client requires 3 things: 
+// The templated action type name: Rings
+// A ROS 2 node to add the action client to: g_node
+// The action name: "rings"
+
 
 int main(int argc, char ** argv)
 {
   rclcpp::init(argc, argv);
   g_node = rclcpp::Node::make_shared("action_client");
+  // param
+  g_node->->declare_parameter("radius", 1.0);
+  doble radius = g_node->get_parameter("radius").get_parameter_value().get<double>();
   auto action_client = rclcpp_action::create_client<Rings>(
     g_node, "rings");
 
@@ -37,11 +49,12 @@ int main(int argc, char ** argv)
     return 1;
   }
 
-  node->declare_parameter("radius", 1.0);
+
   auto goal_msg = Rings::Goal();
-  goal_msg.radius = node->get_parameter("radius").get_parameter_value().get<double>();
+  goal_msg.radius = radius;
+ 
 
-
+  // Ask server to achieve the goal
   RCLCPP_INFO(g_node->get_logger(), 
     "Sending goal");
   auto send_goal_options = 
@@ -50,9 +63,12 @@ int main(int argc, char ** argv)
   auto goal_handle_future = 
     action_client->async_send_goal(goal_msg, send_goal_options);
 
+  // Wait until it's accepted or rejected
   auto return_code = rclcpp::spin_until_future_complete(g_node,
     goal_handle_future);
     
+
+   // Exit in case of failure or if the goal has been rejected by the server
     if (return_code != rclcpp::FutureReturnCode::SUCCESS)
   {
     RCLCPP_ERROR(g_node->get_logger(), 
@@ -60,7 +76,7 @@ int main(int argc, char ** argv)
     return 1;
   }
 
-  GoalHandleFibonacci::SharedPtr goal_handle = 
+  GoalHandleRings::SharedPtr goal_handle = 
     goal_handle_future.get();
   if (!goal_handle) {
     RCLCPP_ERROR(g_node->get_logger(), 
@@ -68,6 +84,7 @@ int main(int argc, char ** argv)
     return 1;
   }
 
+// Wait for the server to be done with the goal
   auto result_future = 
     action_client->async_get_result(goal_handle);
 
@@ -102,9 +119,7 @@ int main(int argc, char ** argv)
 
 
   RCLCPP_INFO(g_node->get_logger(), "result received");
-  for (auto number : wrapped_result.result->sequence) {
-    RCLCPP_INFO(g_node->get_logger(), "%" PRId32, number);
-  }
+ 
 
   action_client.reset();
   g_node.reset();
@@ -112,7 +127,7 @@ int main(int argc, char ** argv)
   return 0;
 }
 
-*/
+
     
     
 
