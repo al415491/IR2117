@@ -1,0 +1,25 @@
+[35m[1mScanning dependencies of target action_server[0m
+[35m[1mScanning dependencies of target action_client[0m
+[ 33%] Built target rings
+[ 66%] [32mBuilding CXX object CMakeFiles/action_server.dir/src/rings_action_server.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/action_client.dir/src/rings_action_server.cpp.o[0m
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:[m[K In function ‘[01m[Kvoid execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<olympic_interfaces::action::Rings> >)[m[K’:
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:69:20:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Krclcpp::WallRate loop_rate[m[K’
+   69 |   rclcpp::WallRate [01;31m[Kloop_rate[m[K(10ms);
+      |                    [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:55:16:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Krclcpp::Rate loop_rate[m[K’
+   55 |   rclcpp::Rate [01;36m[Kloop_rate[m[K(1);
+      |                [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:[m[K In function ‘[01m[Kvoid execute(std::shared_ptr<rclcpp_action::ServerGoalHandle<olympic_interfaces::action::Rings> >)[m[K’:
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:69:20:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Krclcpp::WallRate loop_rate[m[K’
+   69 |   rclcpp::WallRate [01;31m[Kloop_rate[m[K(10ms);
+      |                    [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp:55:16:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Krclcpp::Rate loop_rate[m[K’
+   55 |   rclcpp::Rate [01;36m[Kloop_rate[m[K(1);
+      |                [01;36m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/action_server.dir/build.make:63: CMakeFiles/action_server.dir/src/rings_action_server.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/action_server.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/action_client.dir/build.make:63: CMakeFiles/action_client.dir/src/rings_action_server.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/action_client.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

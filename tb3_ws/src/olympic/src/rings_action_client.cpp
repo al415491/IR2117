@@ -3,7 +3,7 @@
 #include "olympic_interfaces/action/rings.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
-#include <<sstream>
+#include <sstream>
 #include <iomanip>
 
 
@@ -23,7 +23,7 @@ void feedback_callback(GoalHandleRings::SharedPtr,
 {
   std::stringstream ss;
   ss << std::setprecision(3) << "Circle nº" << feedback->drawing_ring << " at " << feedback->ring_angle << " degrees";
-  RCLCPP_INFO(g_node->get_logger, ss.str().c_str()); //ss --> string --> char*
+  RCLCPP_INFO(g_node->get_logger(), ss.str().c_str()); //ss --> string --> char*
 
 }
 
@@ -38,8 +38,8 @@ int main(int argc, char ** argv)
   rclcpp::init(argc, argv);
   g_node = rclcpp::Node::make_shared("action_client");
   // param
-  g_node->->declare_parameter("radius", 1.0);
-  doble radius = g_node->get_parameter("radius").get_parameter_value().get<double>();
+  g_node->declare_parameter("radius", 1.0);
+  double radius = g_node->get_parameter("radius").get_parameter_value().get<double>();
   auto action_client = rclcpp_action::create_client<Rings>(
     g_node, "rings");
 
