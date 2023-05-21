@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/action_client.dir/src/rings_action_server.cpp.o"
+  "CMakeFiles/action_client.dir/src/rings_action_client.cpp.o"
   "action_client"
   "action_client.pdb"
 )

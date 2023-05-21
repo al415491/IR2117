@@ -33,7 +33,7 @@ add_executable(action_server src/rings_action_server.cpp)
 ament_target_dependencies(action_server rclcpp turtlesim geometry_msgs rclcpp_action
 olympic_interfaces)
 
-add_executable(action_client src/rings_action_server.cpp)
+add_executable(action_client src/rings_action_client.cpp)
 ament_target_dependencies(action_client rclcpp turtlesim geometry_msgs rclcpp_action
 olympic_interfaces)
 

@@ -110,7 +110,6 @@ void execute(const std::shared_ptr<GoalHandleRings> goal_handle) {
       message.linear.x = 1;
       message.angular.z = 2 * M_PI / time_for_circle;
       publisher->publish(message);
-      rclcpp::spin_some(node);
       loop_rate.sleep();
     }
     // send zero velocity to topic
@@ -141,7 +140,3 @@ int main(int argc, char ** argv){
   rclcpp::shutdown();
   return 0;
 }
-
-
-
-

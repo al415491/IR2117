@@ -259,13 +259,39 @@ src/rings.cpp.s:
 	$(MAKE) -f CMakeFiles/rings.dir/build.make CMakeFiles/rings.dir/src/rings.cpp.s
 .PHONY : src/rings.cpp.s
 
+src/rings_action_client.o: src/rings_action_client.cpp.o
+
+.PHONY : src/rings_action_client.o
+
+# target to build an object file
+src/rings_action_client.cpp.o:
+	$(MAKE) -f CMakeFiles/action_client.dir/build.make CMakeFiles/action_client.dir/src/rings_action_client.cpp.o
+.PHONY : src/rings_action_client.cpp.o
+
+src/rings_action_client.i: src/rings_action_client.cpp.i
+
+.PHONY : src/rings_action_client.i
+
+# target to preprocess a source file
+src/rings_action_client.cpp.i:
+	$(MAKE) -f CMakeFiles/action_client.dir/build.make CMakeFiles/action_client.dir/src/rings_action_client.cpp.i
+.PHONY : src/rings_action_client.cpp.i
+
+src/rings_action_client.s: src/rings_action_client.cpp.s
+
+.PHONY : src/rings_action_client.s
+
+# target to generate assembly for a file
+src/rings_action_client.cpp.s:
+	$(MAKE) -f CMakeFiles/action_client.dir/build.make CMakeFiles/action_client.dir/src/rings_action_client.cpp.s
+.PHONY : src/rings_action_client.cpp.s
+
 src/rings_action_server.o: src/rings_action_server.cpp.o
 
 .PHONY : src/rings_action_server.o
 
 # target to build an object file
 src/rings_action_server.cpp.o:
-	$(MAKE) -f CMakeFiles/action_client.dir/build.make CMakeFiles/action_client.dir/src/rings_action_server.cpp.o
 	$(MAKE) -f CMakeFiles/action_server.dir/build.make CMakeFiles/action_server.dir/src/rings_action_server.cpp.o
 .PHONY : src/rings_action_server.cpp.o
 
@@ -275,7 +301,6 @@ src/rings_action_server.i: src/rings_action_server.cpp.i
 
 # target to preprocess a source file
 src/rings_action_server.cpp.i:
-	$(MAKE) -f CMakeFiles/action_client.dir/build.make CMakeFiles/action_client.dir/src/rings_action_server.cpp.i
 	$(MAKE) -f CMakeFiles/action_server.dir/build.make CMakeFiles/action_server.dir/src/rings_action_server.cpp.i
 .PHONY : src/rings_action_server.cpp.i
 
@@ -285,7 +310,6 @@ src/rings_action_server.s: src/rings_action_server.cpp.s
 
 # target to generate assembly for a file
 src/rings_action_server.cpp.s:
-	$(MAKE) -f CMakeFiles/action_client.dir/build.make CMakeFiles/action_client.dir/src/rings_action_server.cpp.s
 	$(MAKE) -f CMakeFiles/action_server.dir/build.make CMakeFiles/action_server.dir/src/rings_action_server.cpp.s
 .PHONY : src/rings_action_server.cpp.s
 
@@ -310,6 +334,9 @@ help:
 	@echo "... src/rings.o"
 	@echo "... src/rings.i"
 	@echo "... src/rings.s"
+	@echo "... src/rings_action_client.o"
+	@echo "... src/rings_action_client.i"
+	@echo "... src/rings_action_client.s"
 	@echo "... src/rings_action_server.o"
 	@echo "... src/rings_action_server.i"
 	@echo "... src/rings_action_server.s"

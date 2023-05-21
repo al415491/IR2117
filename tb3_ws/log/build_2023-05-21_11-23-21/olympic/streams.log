@@ -1,0 +1,33 @@
+[0.011s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic_interfaces:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/robot_trajectory:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/obstacles:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/olympic_interfaces:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic -- -j16 -l16
+[0.035s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.056s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.227s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.273s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.279s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.383s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.430s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.431s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.556s] -- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)
+[0.643s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.673s] -- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+[0.722s] -- Found rclcpp_action: 2.4.2 (/opt/ros/foxy/share/rclcpp_action/cmake)
+[0.751s] -- Found rclcpp_components: 2.4.2 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[0.801s] -- Found olympic_interfaces: 0.0.0 (/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic_interfaces/share/olympic_interfaces/cmake)
+[0.848s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.898s] -- Configuring done
+[0.914s] -- Generating done
+[0.915s] -- Build files have been written to: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic
+[0.934s] [35m[1mScanning dependencies of target action_client[0m
+[0.947s] [ 33%] Built target rings
+[0.948s] [ 66%] Built target action_server
+[0.954s] [ 83%] [32mBuilding CXX object CMakeFiles/action_client.dir/src/rings_action_client.cpp.o[0m
+[3.237s] [100%] [32m[1mLinking CXX executable action_client[0m
+[3.349s] [100%] Built target action_client
+[3.357s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic' returned '0': CMAKE_PREFIX_PATH=/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic_interfaces:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/robot_trajectory:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/obstacles:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/olympic_interfaces:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles:/opt/ros/foxy /usr/bin/cmake --build /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic -- -j16 -l16
+[3.376s] Invoking command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic_interfaces:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/robot_trajectory:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/obstacles:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/olympic_interfaces:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles:/opt/ros/foxy /usr/bin/cmake --install /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic
+[3.382s] -- Install configuration: ""
+[3.382s] -- Up-to-date: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings
+[3.382s] -- Up-to-date: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/action_server
+[3.383s] -- Installing: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/action_client
+[3.383s] -- Set runtime path of "/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/action_client" to ""
+[3.388s] Invoked command in '/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic' returned '0': CMAKE_PREFIX_PATH=/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic_interfaces:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/robot_trajectory:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/olympic:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/install/obstacles:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/olympic_interfaces:/home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/install/obstacles:/opt/ros/foxy /usr/bin/cmake --install /home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic

@@ -57,27 +57,27 @@ include CMakeFiles/action_client.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/action_client.dir/flags.make
 
-CMakeFiles/action_client.dir/src/rings_action_server.cpp.o: CMakeFiles/action_client.dir/flags.make
-CMakeFiles/action_client.dir/src/rings_action_server.cpp.o: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/action_client.dir/src/rings_action_server.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/action_client.dir/src/rings_action_server.cpp.o -c /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp
+CMakeFiles/action_client.dir/src/rings_action_client.cpp.o: CMakeFiles/action_client.dir/flags.make
+CMakeFiles/action_client.dir/src/rings_action_client.cpp.o: /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pau24113/Documents/GitHub/IR2117/tb3_ws/build/olympic/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/action_client.dir/src/rings_action_client.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/action_client.dir/src/rings_action_client.cpp.o -c /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp
 
-CMakeFiles/action_client.dir/src/rings_action_server.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/action_client.dir/src/rings_action_server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp > CMakeFiles/action_client.dir/src/rings_action_server.cpp.i
+CMakeFiles/action_client.dir/src/rings_action_client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/action_client.dir/src/rings_action_client.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp > CMakeFiles/action_client.dir/src/rings_action_client.cpp.i
 
-CMakeFiles/action_client.dir/src/rings_action_server.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/action_client.dir/src/rings_action_server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_server.cpp -o CMakeFiles/action_client.dir/src/rings_action_server.cpp.s
+CMakeFiles/action_client.dir/src/rings_action_client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/action_client.dir/src/rings_action_client.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pau24113/Documents/GitHub/IR2117/tb3_ws/src/olympic/src/rings_action_client.cpp -o CMakeFiles/action_client.dir/src/rings_action_client.cpp.s
 
 # Object files for target action_client
 action_client_OBJECTS = \
-"CMakeFiles/action_client.dir/src/rings_action_server.cpp.o"
+"CMakeFiles/action_client.dir/src/rings_action_client.cpp.o"
 
 # External object files for target action_client
 action_client_EXTERNAL_OBJECTS =
 
-action_client: CMakeFiles/action_client.dir/src/rings_action_server.cpp.o
+action_client: CMakeFiles/action_client.dir/src/rings_action_client.cpp.o
 action_client: CMakeFiles/action_client.dir/build.make
 action_client: /opt/ros/foxy/lib/libturtlesim__rosidl_typesupport_introspection_c.so
 action_client: /opt/ros/foxy/lib/libturtlesim__rosidl_typesupport_c.so
