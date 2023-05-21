@@ -111,6 +111,27 @@ void execute(const std::shared_ptr<GoalHandleRings> goal_handle) {
       message.angular.z = 2 * M_PI / time_for_circle;
       publisher->publish(message);
       loop_rate.sleep();
+
+      // Feedback
+      ring_number = i+1;
+			goal_handle->publish_feedback(feedback);
+    	RCLCPP_INFO(rclcpp::get_logger("server"), "Publish Feedback");
+      if (j == num_iterations/4) {
+        ring_angle = 90;
+				goal_handle->publish_feedback(feedback);
+    		RCLCPP_INFO(rclcpp::get_logger("server"), 
+       		"Publish Feedback");
+      }else if (j == num_iterations/2) {
+        ring_angle = 180;
+				goal_handle->publish_feedback(feedback);
+    		RCLCPP_INFO(rclcpp::get_logger("server"), 
+       		"Publish Feedback");
+      }else if (j == 3*num_iterations/4) {
+        ring_angle = 270;
+				goal_handle->publish_feedback(feedback);
+    		RCLCPP_INFO(rclcpp::get_logger("server"), 
+       		"Publish Feedback");
+      } 
     }
     // send zero velocity to topic
     message.linear.x = 0;
@@ -124,6 +145,7 @@ void execute(const std::shared_ptr<GoalHandleRings> goal_handle) {
     goal_handle->succeed(result);
     RCLCPP_INFO(rclcpp::get_logger("server"), 
       "Goal Succeeded");
+    rclcpp::shutdown();
   }
 }
 
